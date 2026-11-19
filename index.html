@@ -10,242 +10,263 @@
 <meta property="og:description" content="Telecommunications engineer and business graduate, working toward management and internationalization in IoT, energy and smart cities.">
 <!-- Optional preview image for LinkedIn/WhatsApp shares: add og.jpg (1200x630) to the repo and uncomment.
 <meta property="og:image" content="https://YOUR-USERNAME.github.io/YOUR-REPO/og.jpg"> -->
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='11' fill='%23F2F4F6' stroke='%23152034' stroke-width='6'/%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='11' fill='%23FFFFFF' stroke='%2317766E' stroke-width='6'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;400;600;800&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet">
 <style>
 /* =====================================================================
    HOW TO EDIT
    - Pages are the <section class="view" data-view="..."> blocks below.
    - Each item can carry:
        data-place="madrid"   → links it to a station on the route map
-       data-lines="eng biz"  → colour badges and filters
-                               (eng = Engineering & IoT, biz = Business & management,
-                                lead = Leading people, com = Community)
+       data-lines="eng biz"  → tags and filters
+                               (eng = Engineering, biz = Business,
+                                lead = Leadership, com = Community)
    - Stations (cities) live in STATIONS in the <script> at the bottom.
    - Optional files next to index.html: photo.jpg (portrait), cv.pdf (short CV:
      the "Download short CV" button appears automatically when it exists).
+   - Colours: change the variables right below.
    ===================================================================== */
 :root{
-  --paper:#F2F4F6; --paper-2:#E6EAEF; --white:#fff;
-  --ink:#152034; --ink-2:#22304A; --muted:#59647A; --rule:#D3D9E1;
-  --eng:#2457C5; --biz:#C7860A; --lead:#C4413A; --com:#1F8A62;
-  --amber:#F2B53A;
-  --display:"Overpass","Helvetica Neue",Arial,sans-serif;
-  --text:"Newsreader",Georgia,"Times New Roman",serif;
-  --wrap:1180px;
+  --bg:#FFFFFF; --tint:#F5F7F7; --tint-2:#ECF0F0;
+  --ink:#1E2A38; --ink-2:#3B4858; --muted:#687483; --rule:#E2E6EA; --track:#CBD3DA;
+  --eng:#3F68C0;  --eng-t:#EBF0FA;
+  --biz:#17766E;  --biz-t:#E4F2EF;
+  --lead:#BD5568; --lead-t:#F9EAED;
+  --com:#C2861C;  --com-t:#FBF2E0;
+  --accent:var(--biz); --accent-t:var(--biz-t);
+  --serif:"Newsreader",Georgia,"Times New Roman",serif;
+  --sans:"Figtree","Helvetica Neue",Arial,sans-serif;
+  --wrap:1160px;
 }
 *{box-sizing:border-box}
 [hidden]{display:none !important}
-html{scroll-behavior:smooth;scroll-padding-top:80px}
+html{scroll-behavior:smooth;scroll-padding-top:88px}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
-body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--text);font-size:1.125rem;line-height:1.6;-webkit-font-smoothing:antialiased}
-a{color:inherit;text-decoration-thickness:1px;text-underline-offset:3px}
-a:hover{color:var(--eng)}
-:focus-visible{outline:3px solid var(--eng);outline-offset:3px;border-radius:2px}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:1.0625rem;line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:clip}
+a{color:inherit;text-decoration-color:var(--track);text-decoration-thickness:1px;text-underline-offset:3px}
+a:hover{color:var(--accent);text-decoration-color:currentColor}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:3px}
 .wrap{max-width:var(--wrap);margin:0 auto;padding-left:32px;padding-right:32px}
-.skip{position:absolute;left:-9999px;top:8px;background:#fff;padding:8px 14px;z-index:99;font-family:var(--display)}
+.skip{position:absolute;left:-9999px;top:8px;background:#fff;padding:8px 14px;z-index:99}
 .skip:focus{left:12px}
 
 /* ---------- Top bar ---------- */
-.topbar{position:sticky;top:0;z-index:50;background:var(--ink);color:#fff;border-bottom:1px solid rgba(255,255,255,.08)}
-.topbar .wrap{display:flex;align-items:center;gap:28px;height:64px}
-.brand{display:flex;align-items:center;gap:10px;font-family:var(--display);font-weight:800;font-size:1rem;text-decoration:none;color:#fff;white-space:nowrap}
-.brand:hover{color:#fff}
-.brand i{width:16px;height:16px;border-radius:50%;border:4px solid #fff;flex:none}
-.topbar nav{display:flex;gap:4px;margin-left:auto;overflow-x:auto;scrollbar-width:none}
+.topbar{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--rule)}
+.topbar .wrap{display:flex;align-items:center;gap:28px;height:68px}
+.brand{display:flex;align-items:center;gap:10px;font-family:var(--serif);font-weight:500;font-size:1.2rem;text-decoration:none;white-space:nowrap}
+.brand:hover{color:var(--ink)}
+.brand i{width:15px;height:15px;border-radius:50%;border:3.5px solid var(--accent);flex:none}
+.topbar nav{display:flex;gap:2px;margin-left:auto;overflow-x:auto;scrollbar-width:none}
 .topbar nav::-webkit-scrollbar{display:none}
-.topbar nav a{font-family:var(--display);font-size:.95rem;color:#C9D2E0;text-decoration:none;padding:8px 12px;border-radius:4px;white-space:nowrap;position:relative}
-.topbar nav a:hover{color:#fff;background:var(--ink-2)}
-.topbar nav a[aria-current="page"]{color:#fff}
-.topbar nav a[aria-current="page"]{box-shadow:inset 0 -3px 0 var(--amber);border-radius:4px 4px 0 0}
-.topbar .cta{font-family:var(--display);font-weight:600;font-size:.92rem;background:#fff;color:var(--ink);text-decoration:none;padding:8px 14px;border-radius:4px;white-space:nowrap}
-.topbar .cta:hover{background:var(--amber);color:var(--ink)}
+.topbar nav a{font-size:.95rem;color:var(--muted);text-decoration:none;padding:9px 12px;white-space:nowrap}
+.topbar nav a:hover{color:var(--ink)}
+.topbar nav a[aria-current="page"]{color:var(--ink);font-weight:600;box-shadow:inset 0 -2px 0 var(--accent)}
+.topbar .cta{font-weight:600;font-size:.92rem;background:var(--accent);color:#fff;text-decoration:none;padding:9px 16px;border-radius:999px;white-space:nowrap}
+.topbar .cta:hover{background:var(--ink);color:#fff}
 
-/* ---------- Hero (overview) ---------- */
-.sign{background:var(--ink);color:#fff}
-.sign .wrap{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:56px;align-items:center;padding-top:72px;padding-bottom:64px}
-.portrait{width:88px;height:88px;border-radius:50%;object-fit:cover;border:4px solid #fff;margin-bottom:22px;display:block}
-.sign h1{font-family:var(--display);font-weight:800;font-size:clamp(2.7rem,6.6vw,5.4rem);line-height:.95;letter-spacing:-.025em;margin:0}
-.sign .role{font-family:var(--display);font-weight:300;font-size:clamp(1.15rem,2vw,1.45rem);line-height:1.38;margin:22px 0 0;max-width:34ch;color:#DCE3EE}
-.sign .intro{color:#B9C4D6;font-size:1.08rem;max-width:52ch;margin:18px 0 0}
-.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
-.btn{font-family:var(--display);font-weight:600;font-size:.98rem;text-decoration:none;padding:11px 18px;border-radius:4px;border:2px solid #fff;color:#fff;display:inline-block}
-.btn.solid{background:#fff;color:var(--ink)}
-.btn:hover{background:var(--amber);border-color:var(--amber);color:var(--ink)}
+/* ---------- Hero ---------- */
+.hero .wrap{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.95fr);gap:64px;align-items:center;padding-top:80px;padding-bottom:72px}
+.portrait{width:92px;height:92px;border-radius:50%;object-fit:cover;margin-bottom:24px;display:block;box-shadow:0 0 0 4px var(--bg),0 0 0 5px var(--rule)}
+.hero h1{font-family:var(--serif);font-weight:500;font-size:clamp(3rem,7vw,5.4rem);line-height:.98;letter-spacing:-.02em;margin:0}
+.hero .role{font-size:clamp(1.12rem,1.8vw,1.32rem);line-height:1.45;margin:24px 0 0;max-width:36ch;color:var(--ink-2)}
+.hero .intro{color:var(--muted);max-width:52ch;margin:16px 0 0}
+.actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:30px}
+.btn{font-weight:600;font-size:.97rem;text-decoration:none;padding:11px 20px;border-radius:999px;border:1.5px solid var(--ink);color:var(--ink);display:inline-block;background:transparent}
+.btn.solid{background:var(--accent);border-color:var(--accent);color:#fff}
+.btn:hover{background:var(--ink);border-color:var(--ink);color:#fff}
 
-.board{background:#0E1626;border-radius:6px;padding:22px 24px 10px;box-shadow:inset 0 0 0 1px rgba(255,255,255,.06)}
-.board h2{font-family:var(--display);font-weight:600;font-size:.95rem;color:#8E9AB0;margin:0 0 10px;display:flex;justify-content:space-between}
-.board h2 .clock{color:var(--amber);font-variant-numeric:tabular-nums}
+.board{border:1px solid var(--rule);border-radius:16px;padding:22px 26px 8px;background:var(--bg)}
+.board h2{font-size:.9rem;font-weight:600;color:var(--muted);margin:0 0 6px;display:flex;justify-content:space-between;gap:12px}
+.board h2 .clock{color:var(--accent);font-variant-numeric:tabular-nums;font-weight:500}
 .board ul{list-style:none;margin:0;padding:0}
-.board li{display:grid;grid-template-columns:62px 1fr;gap:4px 14px;padding:13px 0;border-top:1px solid rgba(255,255,255,.08)}
-.board .when{font-family:var(--display);font-weight:800;font-size:.85rem;color:var(--amber);padding-top:3px}
-.board .what{font-family:var(--display);font-weight:600;font-size:1.02rem;line-height:1.3;color:#fff}
-.board .what small{display:block;font-weight:400;font-size:.88rem;color:#9FAABD;margin-top:2px}
+.board li{display:grid;grid-template-columns:56px 1fr;gap:4px 12px;padding:14px 0;border-top:1px solid var(--rule)}
+.board .when{font-weight:700;font-size:.82rem;color:var(--accent);padding-top:3px}
+.board .what{font-weight:600;font-size:1rem;line-height:1.35;display:block}
+.board .what small{display:block;font-weight:400;font-size:.88rem;color:var(--muted);margin-top:2px}
 .board a{text-decoration:none}
-.board a:hover .what{color:var(--amber)}
-.linebar{display:flex;height:8px}
+.board a:hover .what{color:var(--accent)}
+.linebar{display:flex;height:4px;max-width:var(--wrap);margin:0 auto}
 .linebar span{flex:1}
 
-/* ---------- Route map ---------- */
-.route{padding:56px 0 64px;border-bottom:1px solid var(--rule)}
-.head2{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:10px 32px}
-.head2 h2{font-family:var(--display);font-weight:800;font-size:1.6rem;letter-spacing:-.01em;margin:0}
-.head2 p{margin:0;color:var(--muted);font-size:1.02rem;max-width:60ch}
-.legend{display:flex;flex-wrap:wrap;gap:6px 20px;margin:16px 0 0;padding:0;list-style:none;font-family:var(--display);font-size:.9rem;color:var(--muted)}
-.legend li{display:flex;align-items:center;gap:8px}
-.badge{display:inline-grid;place-items:center;width:20px;height:20px;border-radius:50%;color:#fff;font-family:var(--display);font-weight:800;font-size:.68rem;line-height:1;flex:none;font-style:normal}
-.badge.eng,.fill-eng{background:var(--eng)} .badge.biz,.fill-biz{background:var(--biz)} .badge.lead,.fill-lead{background:var(--lead)} .badge.com,.fill-com{background:var(--com)}
+/* ---------- Tags and dots ---------- */
+.tag{display:inline-block;font-size:.74rem;font-weight:600;line-height:1;padding:5px 9px;border-radius:999px;font-style:normal;white-space:nowrap}
+.tag.eng{background:var(--eng-t);color:var(--eng)} .tag.biz{background:var(--biz-t);color:var(--biz)}
+.tag.lead{background:var(--lead-t);color:var(--lead)} .tag.com{background:var(--com-t);color:#8E6110}
+.fill-eng{background:var(--eng)} .fill-biz{background:var(--biz)} .fill-lead{background:var(--lead)} .fill-com{background:var(--com)}
+.dot{width:10px;height:10px;border-radius:50%;display:inline-block;flex:none}
+.lines{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
 
-.map{width:100%;height:auto;display:block;margin-top:6px;overflow:visible}
-.map .track{fill:none;stroke:var(--ink);stroke-width:9;stroke-linejoin:round;stroke-linecap:round}
-.map .ahead{fill:none;stroke:var(--ink);stroke-width:9;stroke-dasharray:2 16;stroke-linecap:round;opacity:.55}
+/* ---------- Section scaffolding ---------- */
+.block{padding:88px 0}
+.block + .block{border-top:1px solid var(--rule)}
+.tinted{background:var(--tint)}
+.sec{display:grid;grid-template-columns:240px minmax(0,1fr);gap:28px 64px}
+.sec > h2,.h2{font-family:var(--serif);font-weight:500;font-size:2rem;line-height:1.12;letter-spacing:-.01em;margin:0}
+.sec > h2{position:sticky;top:110px;align-self:start}
+.sec > h2 small,.h2 + .sub{display:block;font-family:var(--sans);font-size:1rem;font-weight:400;color:var(--muted);margin-top:10px;line-height:1.45;letter-spacing:0}
+.lede{font-family:var(--serif);font-size:1.5rem;line-height:1.45;margin:0 0 22px;max-width:46ch}
+.body p{max-width:66ch}
+.head2{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:12px 40px;margin-bottom:8px}
+.head2 p{margin:0;color:var(--muted);max-width:44ch}
+
+/* ---------- Story chapters ---------- */
+.chapters{list-style:none;margin:36px 0 0;padding:0;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:0;position:relative}
+.chapters::before{content:"";position:absolute;left:0;right:0;top:15px;height:3px;background:var(--track)}
+.chapters li{position:relative;padding:0 22px 0 0}
+.chapters .n{position:relative;display:grid;place-items:center;width:33px;height:33px;border-radius:50%;background:var(--bg);border:3px solid var(--c,var(--ink));font-family:var(--serif);font-weight:500;font-size:1rem;margin-bottom:18px}
+.chapters .yrs{font-size:.84rem;color:var(--muted);display:block;line-height:1.4}
+.chapters h3{font-family:var(--serif);font-weight:500;font-size:1.35rem;line-height:1.2;margin:0}
+.chapters .yrs{margin:4px 0 10px}
+.chapters p{margin:0 0 10px;font-size:.97rem;color:var(--ink-2)}
+.chapters a{font-size:.9rem;font-weight:600;color:var(--accent);text-decoration:none}
+.chapters a:hover{text-decoration:underline}
+.chapters li.ahead .n{border-style:dashed;color:var(--muted)}
+.chapters li.ahead h3{color:var(--ink-2)}
+
+/* ---------- Route map ---------- */
+.legend{display:flex;flex-wrap:wrap;gap:8px 22px;margin:18px 0 0;padding:0;list-style:none;font-size:.9rem;color:var(--muted)}
+.legend li{display:flex;align-items:center;gap:8px}
+.map{width:100%;height:auto;display:block;margin-top:8px;overflow:visible}
+.map .track{fill:none;stroke:var(--ink);stroke-width:7;stroke-linejoin:round;stroke-linecap:round}
+.map .ahead{fill:none;stroke:var(--ink);stroke-width:7;stroke-dasharray:1 14;stroke-linecap:round;opacity:.45}
 .map .stn{cursor:pointer;outline:none}
 .map .stn .hit{fill:transparent}
-.map .stn .dot{fill:var(--paper);stroke:var(--ink);stroke-width:4.5;transition:fill .15s}
-.map .stn .ring{fill:none;stroke:var(--ink);stroke-width:2}
-.map .stn:hover .dot{fill:var(--paper-2)}
-.map .stn[aria-pressed="true"] .dot{fill:var(--ink)}
-.map .stn:focus-visible .dot{stroke:var(--eng);stroke-width:6}
-.map .name{font-family:var(--display);font-weight:600;font-size:19px;fill:var(--ink)}
-.map .yrs{font-family:var(--display);font-size:14px;fill:var(--muted)}
-.map .here{font-family:var(--text);font-style:italic;font-size:15px;fill:var(--lead)}
+.map .stn .dot2{fill:#fff;stroke:var(--ink);stroke-width:4;transition:fill .15s}
+.map .stn .ring{fill:none;stroke:var(--ink);stroke-width:1.5}
+.map .stn:hover .dot2{fill:var(--tint-2)}
+.map .stn[aria-pressed="true"] .dot2{fill:var(--accent);stroke:var(--accent)}
+.map .stn:focus-visible .dot2{stroke:var(--accent);stroke-width:6}
+.map .name{font-family:var(--sans);font-weight:600;font-size:18px;fill:var(--ink)}
+.map .yrs{font-family:var(--sans);font-size:14px;fill:var(--muted)}
+.map .here{font-family:var(--serif);font-style:italic;font-size:16px;fill:var(--accent)}
 .map .next .name{fill:var(--muted)}
-.map .next .dot{fill:var(--paper);stroke:var(--muted);stroke-dasharray:3 4;stroke-width:3}
+.map .next .dot2{fill:#fff;stroke:var(--muted);stroke-dasharray:3 4;stroke-width:2.5}
 
 .stops{display:none;list-style:none;margin:20px 0 0;padding:0 0 0 6px}
-.stops li{position:relative;padding:0 0 0 30px;border-left:6px solid var(--ink)}
+.stops li{position:relative;padding:0 0 0 28px;border-left:4px solid var(--ink)}
 .stops li:last-child{border-left-style:dotted;border-left-color:var(--muted)}
-.stops button{all:unset;cursor:pointer;display:block;padding:8px 0 16px;font-family:var(--display);font-weight:600;font-size:1.05rem}
+.stops button{all:unset;cursor:pointer;display:block;padding:8px 0 16px;font-weight:600;font-size:1.05rem}
 .stops button small{display:block;font-weight:400;color:var(--muted);font-size:.85rem}
-.stops button::before{content:"";position:absolute;left:-15px;top:9px;width:16px;height:16px;border-radius:50%;background:var(--paper);border:4px solid var(--ink)}
-.stops button[aria-pressed="true"]::before{background:var(--ink)}
-.stops button:focus-visible{outline:3px solid var(--eng)}
+.stops button::before{content:"";position:absolute;left:-13px;top:10px;width:14px;height:14px;border-radius:50%;background:#fff;border:3.5px solid var(--ink)}
+.stops button[aria-pressed="true"]::before{background:var(--accent);border-color:var(--accent)}
+.stops button:focus-visible{outline:2px solid var(--accent)}
 .stops button:disabled{cursor:default;color:var(--muted)}
 
-.panel{margin-top:18px;background:var(--white);border-left:6px solid var(--ink);padding:24px 28px 26px}
-.panel h3{font-family:var(--display);font-weight:800;font-size:1.6rem;margin:0;letter-spacing:-.01em}
-.panel .sub{margin:2px 0 12px;color:var(--muted);font-family:var(--display);font-size:.95rem}
-.panel .intro{margin:0 0 16px;max-width:70ch}
-.panel .groups{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px 36px}
-.panel h4{font-family:var(--display);font-weight:600;font-size:.9rem;color:var(--muted);margin:0 0 6px}
+.panel{margin-top:22px;background:var(--bg);border:1px solid var(--rule);border-radius:16px;padding:28px 32px 26px}
+.panel h3{font-family:var(--serif);font-weight:500;font-size:1.9rem;margin:0;line-height:1.1}
+.panel .sub{margin:4px 0 12px;color:var(--muted);font-size:.95rem}
+.panel .intro{margin:0 0 20px;max-width:68ch;color:var(--ink-2)}
+.panel .groups{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px 36px}
+.panel h4{font-size:.85rem;font-weight:600;color:var(--muted);margin:0 0 6px}
 .panel ul{list-style:none;margin:0 0 4px;padding:0}
-.panel li{display:flex;gap:10px;align-items:flex-start;padding:3px 0;font-size:1rem;line-height:1.4}
-.pips{display:flex;gap:3px;padding-top:5px;flex:none;width:30px}
+.panel li{display:flex;gap:10px;align-items:flex-start;padding:3px 0;font-size:.97rem;line-height:1.4}
+.pips{display:flex;gap:3px;padding-top:6px;flex:none;width:30px}
 .pips i{width:8px;height:8px;border-radius:50%}
 .panel a{text-decoration:none}
 .panel a:hover{text-decoration:underline}
 
-/* ---------- Generic blocks ---------- */
-.block{padding:72px 0;border-bottom:1px solid var(--rule)}
-.sec{display:grid;grid-template-columns:230px minmax(0,1fr);gap:28px 56px}
-.sec > h2{font-family:var(--display);font-weight:600;font-size:1.35rem;line-height:1.2;margin:0;position:sticky;top:96px;align-self:start}
-.sec > h2 small{display:block;font-weight:300;font-size:1rem;color:var(--muted);margin-top:6px;line-height:1.35}
-.lede{font-size:1.3rem;line-height:1.55;margin:0 0 18px;max-width:58ch}
-.body p{max-width:68ch}
-
-.strengths{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:36px 48px}
-.strength{border-top:6px solid var(--c)}
-.strength h3{font-family:var(--display);font-weight:800;font-size:1.2rem;margin:16px 0 6px}
-.strength p{margin:0;font-size:1.05rem}
-.strength a{font-family:var(--display);font-size:.92rem;display:inline-block;margin-top:10px}
-.skills{list-style:none;margin:40px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:8px}
-.skills li{font-family:var(--display);font-size:.92rem;padding:5px 12px;border:1.5px solid var(--ink);border-radius:999px}
+/* ---------- Strengths ---------- */
+.strengths{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.strength{border:1px solid var(--rule);border-radius:16px;padding:26px 28px;background:var(--bg)}
+.strength h3{font-family:var(--serif);font-weight:500;font-size:1.4rem;line-height:1.2;margin:0 0 10px;display:flex;align-items:baseline;gap:10px}
+.strength h3 .dot{background:var(--c);position:relative;top:-3px}
+.strength p{margin:0;color:var(--ink-2)}
+.strength a{font-size:.92rem;font-weight:600;color:var(--c);text-decoration:none;display:inline-block;margin-top:14px}
+.strength a:hover{text-decoration:underline}
+.skills{list-style:none;margin:28px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:8px}
+.skills li{font-size:.9rem;padding:6px 14px;border:1px solid var(--track);border-radius:999px;background:var(--bg)}
 
 /* ---------- Page heads ---------- */
-.pagehead{background:var(--white);border-bottom:1px solid var(--rule)}
-.pagehead .wrap{padding-top:56px;padding-bottom:40px;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:20px 40px;align-items:end}
-.pagehead h1{font-family:var(--display);font-weight:800;font-size:clamp(2.3rem,5vw,3.6rem);letter-spacing:-.02em;line-height:1;margin:0}
-.pagehead p{margin:14px 0 0;max-width:60ch;color:var(--muted);font-size:1.12rem}
-.pagehead .stripe{display:flex;gap:6px}
-.pagehead .stripe i{width:10px;height:56px;border-radius:5px}
+.pagehead{background:var(--tint);border-bottom:1px solid var(--rule)}
+.pagehead .wrap{padding-top:64px;padding-bottom:48px}
+.pagehead h1{font-family:var(--serif);font-weight:500;font-size:clamp(2.6rem,5.4vw,3.8rem);letter-spacing:-.02em;line-height:1.02;margin:0}
+.pagehead p{margin:16px 0 0;max-width:58ch;color:var(--ink-2);font-size:1.12rem}
 
-.filters{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 36px}
-.filters span{font-family:var(--display);font-size:.9rem;color:var(--muted);align-self:center;margin-right:4px}
-.filters button{font-family:var(--display);font-size:.9rem;background:transparent;border:1.5px solid var(--rule);color:var(--ink);padding:6px 12px 5px;border-radius:999px;cursor:pointer;display:flex;align-items:center;gap:7px}
-.filters button i{width:10px;height:10px;border-radius:50%}
+.filters{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 48px}
+.filters span{font-size:.9rem;color:var(--muted);align-self:center;margin-right:4px}
+.filters button{font-family:var(--sans);font-size:.9rem;background:var(--bg);border:1px solid var(--track);color:var(--ink);padding:7px 14px;border-radius:999px;cursor:pointer;display:flex;align-items:center;gap:8px}
+.filters button i{width:9px;height:9px;border-radius:50%}
 .filters button:hover{border-color:var(--ink)}
 .filters button[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:#fff}
 
-/* ---------- Metro timeline ---------- */
-.group{margin:0 0 64px}
+/* ---------- Timeline ---------- */
+.group{margin:0 0 80px}
 .group:last-child{margin-bottom:0}
-.group > h2{font-family:var(--display);font-weight:800;font-size:1.5rem;margin:0 0 6px;letter-spacing:-.01em}
-.group > p.gi{color:var(--muted);margin:0 0 28px;max-width:64ch}
+.group > h2,.cluster > h2{font-family:var(--serif);font-weight:500;font-size:1.85rem;line-height:1.15;margin:0 0 6px}
+.group > p.gi,.cluster > p.gi{color:var(--muted);margin:0 0 32px;max-width:62ch}
 .timeline{position:relative;padding-left:52px}
-.timeline::before{content:"";position:absolute;left:16px;top:10px;bottom:10px;width:6px;background:var(--ink);border-radius:3px}
-.entry{position:relative;padding:0 0 40px}
+.timeline::before{content:"";position:absolute;left:12px;top:12px;bottom:12px;width:3px;background:var(--track);border-radius:2px}
+.entry{position:relative;padding:0 0 48px}
 .entry:last-child{padding-bottom:0}
-.entry::before{content:"";position:absolute;left:-45px;top:4px;width:22px;height:22px;border-radius:50%;background:var(--paper);border:5px solid var(--c,var(--ink));box-sizing:border-box}
-.entry.now::before{background:var(--c,var(--ink))}
-.entry header{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:2px 20px;align-items:baseline;margin-bottom:10px}
-.entry h3{font-family:var(--display);font-weight:800;font-size:1.3rem;line-height:1.25;margin:0}
-.entry .org{grid-column:1;font-family:var(--display);font-size:1.06rem;margin:0}
-.entry .when{grid-column:2;grid-row:1;font-family:var(--display);font-size:.95rem;color:var(--muted);white-space:nowrap;text-align:right;margin:0}
-.entry .where{grid-column:2;grid-row:2;font-family:var(--display);font-size:.95rem;color:var(--muted);text-align:right;margin:0}
-.entry p{margin:0 0 10px;max-width:68ch}
-.entry .learnt{font-style:italic;border-left:3px solid var(--c,var(--rule));padding-left:14px;color:var(--ink-2)}
-.entry .note{font-family:var(--display);font-size:.92rem;color:var(--muted)}
-.lines{display:flex;gap:4px;margin-top:6px}
-.sublist{list-style:none;margin:14px 0 6px;padding:0;border-left:3px solid var(--rule)}
-.sublist li{padding:4px 0 10px 18px}
-.sublist .t{font-family:var(--display);font-weight:600;font-size:1.02rem;display:block;line-height:1.35}
-.sublist .m{font-family:var(--display);font-size:.9rem;color:var(--muted)}
-.sublist p{margin:4px 0 0;font-size:1.02rem}
+.entry::before{content:"";position:absolute;left:-49px;top:5px;width:21px;height:21px;border-radius:50%;background:#fff;border:4px solid var(--c,var(--ink));box-sizing:border-box}
+.entry.now::before{background:var(--c,var(--ink));box-shadow:0 0 0 5px var(--accent-t)}
+.entry header{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:2px 24px;align-items:baseline;margin-bottom:12px}
+.entry h3{font-family:var(--serif);font-weight:500;font-size:1.5rem;line-height:1.2;margin:0}
+.entry .org{grid-column:1;font-weight:600;font-size:1rem;margin:2px 0 0;color:var(--ink-2)}
+.entry .when{grid-column:2;grid-row:1;font-size:.92rem;color:var(--muted);white-space:nowrap;text-align:right;margin:0}
+.entry .where{grid-column:2;grid-row:2;font-size:.92rem;color:var(--muted);text-align:right;margin:0}
+.entry p{margin:0 0 12px;max-width:66ch}
+.entry .learnt{font-family:var(--serif);font-style:italic;font-size:1.12rem;line-height:1.55;color:var(--ink-2);border-left:2px solid var(--c,var(--track));padding-left:16px;margin-top:4px}
+.entry .note{font-size:.92rem;color:var(--muted)}
+.sublist{list-style:none;margin:14px 0 12px;padding:0}
+.sublist li{padding:10px 0;border-top:1px solid var(--rule)}
+.sublist li:last-child{border-bottom:1px solid var(--rule)}
+.sublist .t{font-weight:600;font-size:.98rem;display:block;line-height:1.4}
+.sublist .m{font-size:.88rem;color:var(--muted)}
+.sublist p{margin:4px 0 0;font-size:.97rem}
 
-.flash{animation:flash 1.6s ease-out}
-@keyframes flash{0%,30%{background:#FBEFD2}100%{background:transparent}}
+.flash{animation:flash 1.8s ease-out}
+@keyframes flash{0%,30%{background:var(--accent-t);box-shadow:0 0 0 12px var(--accent-t)}100%{background:transparent;box-shadow:0 0 0 12px transparent}}
 
 /* ---------- Cards ---------- */
-.cluster{margin:0 0 56px}
+.cluster{margin:0 0 72px}
 .cluster:last-child{margin-bottom:0}
-.cluster > h2{font-family:var(--display);font-weight:800;font-size:1.5rem;margin:0 0 6px;letter-spacing:-.01em}
-.cluster > p.gi{color:var(--muted);margin:0 0 20px;font-size:1.04rem;max-width:64ch}
-.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px}
-.card{background:var(--white);padding:20px 22px 22px;position:relative;border-top:5px solid var(--c,var(--ink))}
-.card .t{font-family:var(--display);font-weight:800;font-size:1.1rem;line-height:1.3;display:block;padding-right:56px}
-.card .m{font-family:var(--display);font-size:.86rem;color:var(--muted);display:block;margin:4px 0 10px}
-.card p{margin:0;font-size:1.02rem;line-height:1.5}
-.card .lines{position:absolute;top:18px;right:18px;margin:0;gap:3px}
-.card .lines .badge{width:17px;height:17px;font-size:.6rem}
-.prize{display:inline-block;margin-top:12px;font-family:var(--display);font-weight:600;font-size:.85rem;color:var(--ink);background:#F7E7C2;padding:3px 9px;border-radius:3px}
-.card a.more{font-family:var(--display);font-size:.9rem;display:inline-block;margin-top:10px}
+.cluster > h2 + .langs,.cluster > h2 + .plain{margin-top:24px}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:18px}
+.card{background:var(--bg);border:1px solid var(--rule);border-radius:14px;padding:22px 24px;display:flex;flex-direction:column}
+.card .t{font-family:var(--serif);font-weight:500;font-size:1.3rem;line-height:1.25;display:block}
+.card .m{font-size:.86rem;color:var(--muted);display:block;margin:6px 0 10px}
+.card p{margin:0;font-size:.98rem;line-height:1.6;color:var(--ink-2)}
+.card .lines{margin-top:auto;padding-top:16px}
+.prize{align-self:flex-start;display:inline-block;margin-top:14px;font-weight:600;font-size:.82rem;color:#7A5410;background:var(--com-t);padding:5px 11px;border-radius:999px}
 
-.pub{background:var(--white);padding:24px 26px;border-left:6px solid var(--eng);margin:0 0 14px}
-.pub .t{font-family:var(--display);font-weight:800;font-size:1.12rem;line-height:1.35;display:block}
-.pub .m{font-family:var(--display);font-size:.92rem;color:var(--muted);display:block;margin-top:6px}
+.pub{border:1px solid var(--rule);border-radius:14px;padding:24px 26px;margin:0 0 14px;background:var(--bg)}
+.pub .k{font-size:.82rem;font-weight:600;color:var(--eng);display:block;margin-bottom:6px}
+.pub .t{font-family:var(--serif);font-weight:500;font-size:1.3rem;line-height:1.3;display:block}
+.pub .m{font-size:.92rem;color:var(--muted);display:block;margin-top:8px}
 
-.plain{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:0 40px}
-.plain li{padding:12px 0;border-bottom:1px solid var(--rule);display:flex;gap:12px}
-.plain .t{font-family:var(--display);font-weight:600;font-size:1rem;display:block;line-height:1.35}
-.plain .m{font-family:var(--display);font-size:.88rem;color:var(--muted)}
-.plain .lines{margin:2px 0 0}
-.plain .lines .badge{width:17px;height:17px;font-size:.6rem}
+.plain{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:0 48px}
+.plain li{padding:16px 0;border-bottom:1px solid var(--rule)}
+.plain .t{font-weight:600;font-size:1rem;display:block;line-height:1.4}
+.plain .m{font-size:.9rem;color:var(--muted);display:block;margin-top:2px}
+.plain .lines{margin-top:8px}
+.plain li > span:first-child{display:block}
+.plain .lines:empty{display:none}
 
-.langs{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px}
-.lang h3{font-family:var(--display);font-weight:800;font-size:1.15rem;margin:0}
-.lang p{margin:2px 0 10px;font-family:var(--display);font-size:.92rem;color:var(--muted)}
-.meter{height:6px;background:var(--paper-2);position:relative}
-.meter span{position:absolute;inset:0 auto 0 0;background:var(--ink)}
+.langs{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:28px}
+.lang h3{font-family:var(--serif);font-weight:500;font-size:1.35rem;margin:0}
+.lang p{margin:2px 0 12px;font-size:.9rem;color:var(--muted)}
+.meter{height:5px;background:var(--tint-2);border-radius:3px;position:relative;overflow:hidden}
+.meter span{position:absolute;inset:0 auto 0 0;background:var(--accent);border-radius:3px}
 
-/* ---------- Contact / next stop ---------- */
-.dark{background:var(--ink);color:#fff;border:0}
-.dark .sec > h2 small{color:#AEB8C9}
-.dark p{color:#D7DEEA}
-.contact{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+/* ---------- Contact ---------- */
+.contactband{background:var(--accent-t)}
+.contactband .lede{max-width:40ch}
+.contactband p{color:var(--ink-2)}
+.contact{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
 
 .nextstop{border-top:1px solid var(--rule)}
-.nextstop .wrap{display:flex;justify-content:space-between;gap:20px;padding-top:28px;padding-bottom:28px;font-family:var(--display)}
+.nextstop .wrap{display:flex;justify-content:space-between;gap:20px;padding-top:32px;padding-bottom:32px}
 .nextstop a{text-decoration:none;display:block}
 .nextstop small{display:block;color:var(--muted);font-size:.85rem}
-.nextstop strong{font-size:1.25rem;font-weight:800}
+.nextstop strong{font-family:var(--serif);font-weight:500;font-size:1.5rem}
 .nextstop a:last-child{text-align:right;margin-left:auto}
-.nextstop a:hover strong{color:var(--eng)}
+.nextstop a:hover strong{color:var(--accent)}
 
-footer{background:var(--ink);color:#8E9AB0;font-family:var(--display);font-size:.85rem}
-footer .wrap{padding-top:22px;padding-bottom:22px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
-footer a{color:#C9D2E0}
+footer{border-top:1px solid var(--rule);color:var(--muted);font-size:.88rem}
+footer .wrap{padding-top:24px;padding-bottom:24px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 
 /* ---------- Load moment: the line draws itself once ---------- */
 @media (prefers-reduced-motion:no-preference){
@@ -254,46 +275,51 @@ footer a{color:#C9D2E0}
   .map .ahead{opacity:0;animation:fade .6s ease-out 2s forwards}
   @keyframes draw{to{stroke-dashoffset:0}}
   @keyframes pop{to{opacity:1}}
-  @keyframes fade{to{opacity:.55}}
+  @keyframes fade{to{opacity:.45}}
 }
 @media (prefers-reduced-motion:reduce){.flash{animation:none}}
 
 /* ---------- Responsive ---------- */
-@media (max-width:980px){
-  .sign .wrap{grid-template-columns:1fr;gap:40px}
+@media (max-width:1020px){
+  .hero .wrap{grid-template-columns:1fr;gap:44px}
   .sec{grid-template-columns:1fr;gap:20px}
   .sec > h2{position:static}
-  .strengths{grid-template-columns:1fr}
+  .chapters{grid-template-columns:1fr;gap:0;padding-left:52px}
+  .chapters::before{left:15px;right:auto;top:8px;bottom:8px;width:3px;height:auto}
+  .chapters li{padding:0 0 30px}
+  .chapters .n{position:absolute;left:-52px;top:0}
   .langs{grid-template-columns:repeat(2,minmax(0,1fr))}
 }
 @media (max-width:760px){
   .wrap{padding-left:20px;padding-right:20px}
-  .topbar .wrap{gap:12px;height:56px}
+  .topbar .wrap{gap:10px;height:58px}
   .brand span{display:none}
   .topbar .cta{display:none}
+  .topbar nav{margin-left:0}
   .map{display:none}
   .stops{display:block}
-  .block{padding:52px 0}
-  .sign .wrap{padding-top:48px;padding-bottom:44px}
-  .pagehead .wrap{grid-template-columns:1fr;padding-top:40px;padding-bottom:28px}
-  .pagehead .stripe{display:none}
-  .timeline{padding-left:40px}
-  .timeline::before{left:10px}
-  .entry::before{left:-37px}
+  .block{padding:60px 0}
+  .hero .wrap{padding-top:48px;padding-bottom:48px}
+  .strengths{grid-template-columns:1fr}
+  .pagehead .wrap{padding-top:44px;padding-bottom:32px}
+  .timeline{padding-left:38px}
+  .timeline::before{left:8px}
+  .entry::before{left:-39px}
   .entry header{grid-template-columns:1fr}
   .entry .when,.entry .where{grid-column:1;grid-row:auto;text-align:left}
-  .panel{padding:20px}
+  .panel{padding:22px}
   .cards{grid-template-columns:1fr}
+  .board{padding:18px 20px 6px}
 }
 
 /* ---------- Print: every page, one after another ---------- */
 @media print{
-  body{background:#fff;font-size:10.5pt}
-  .topbar,.route,.filters,.nextstop,.actions,.board,.skip{display:none !important}
+  body{font-size:10.5pt}
+  .topbar,.route,.filters,.nextstop,.actions,.board,.skip,.chapters a{display:none !important}
   .view[hidden]{display:block !important}
-  .sign,.dark{background:#fff;color:var(--ink)} .sign .role,.sign .intro,.dark p{color:var(--muted)}
   .entry,.card,.strength,.pub{break-inside:avoid}
   .sec > h2{position:static}
+  .block{padding:24px 0}
 }
 </style>
 </head>
@@ -321,14 +347,14 @@ footer a{color:#C9D2E0}
      ================================================================= -->
 <section class="view" data-view="overview" data-label="Overview" data-title="Lucía López García">
 
-  <div class="sign">
+  <div class="hero">
     <div class="wrap">
       <div>
         <!-- Add photo.jpg next to this file; it hides itself if missing -->
         <img class="portrait" src="photo.jpg" alt="Portrait of Lucía López García" onerror="this.remove()">
         <h1>Lucía<br>López García</h1>
-        <p class="role">Telecommunications engineer and business graduate, working toward management and internationalization in IoT, energy and smart cities.</p>
-        <p class="intro">I'm at the start of my career, and so far I've spent it learning in very different places: research labs, a racing team, start-up contests, theme parks and now Japanese industry. This page collects all of it.</p>
+        <p class="role">Telecommunications engineer and business graduate, working toward a leadership career in business, as a founder or inside a technology company.</p>
+        <p class="intro">I'm at the start of my career, and so far I've spent it learning in very different places: research labs, a racing team, start-up contests, a theme park and now Japanese industry. This page tells that story.</p>
         <div class="actions">
           <a class="btn solid" href="#/overview/journey">Explore my journey</a>
           <a class="btn" href="#/overview/contact">Get in touch</a>
@@ -350,17 +376,41 @@ footer a{color:#C9D2E0}
     <div class="linebar" aria-hidden="true"><span class="fill-eng"></span><span class="fill-biz"></span><span class="fill-lead"></span><span class="fill-com"></span></div>
   </div>
 
-  <div class="route" id="journey">
+  <div class="block">
+    <div class="wrap sec">
+      <h2>About me</h2>
+      <div class="body">
+        <p class="lede">I'm a telecommunications engineer and business graduate specialising in IoT and energy efficiency, with experience in Spain, Poland, the United States and Japan.</p>
+        <p>What interests me most is the point where a new technology becomes a business, and where a business crosses a border. I've seen it from several sides. I spent three years developing IoT and energy-efficiency projects in Madrid, supported international ICT teams at Acciona and wrote start-up plans that won student competitions. Now I'm in Tokyo, doing internationalization research for European and Japanese companies.</p>
+        <p>I know I'm early in my career, and I'm here to keep learning. My goal is to grow into business leadership, either by building a company of my own or by leading teams inside a technology company that creates new solutions in IoT, energy or smart cities. An MBA is likely part of that path. Wherever it takes me, I'll keep travelling, because it's how I learn fastest.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="block" id="story">
+    <div class="wrap">
+      <div class="head2"><div><h2 class="h2">My story so far</h2><p class="sub">Four chapters so far, each one built on the last.</p></div></div>
+      <ol class="chapters">
+        <li style="--c:var(--com)"><span class="n">1</span><h3>Saying yes early</h3><span class="yrs">Santander and Auckland, 2008 – 2020</span><p>Maths talent programme, ski racing, dance, hospital volunteering and a school year in New Zealand.</p><a href="#/beyond">Beyond work</a></li>
+        <li style="--c:var(--eng)"><span class="n">2</span><h3>Two degrees at once</h3><span class="yrs">Madrid, 2020 – 2025</span><p>Engineering and business in parallel, IoT research that led to two publications, and Acciona.</p><a href="#/experience/urjc-iot">Experience</a></li>
+        <li style="--c:var(--lead)"><span class="n">3</span><h3>Learning abroad</h3><span class="yrs">Kraków, Granada and Florida, 2022 – 2025</span><p>Formula Student sponsorships in Poland, award-winning start-ups in Granada, Disney and UC Riverside in the US.</p><a href="#/projects/ventures">Projects</a></li>
+        <li style="--c:var(--biz)"><span class="n">4</span><h3>Building bridges</h3><span class="yrs">Valladolid and Tokyo, 2025 – now</span><p>A master's in telecommunications, then Japan: Vulcanus internationalization research and renewable energy at Vena.</p><a href="#/experience/vulcanus">Experience</a></li>
+        <li class="ahead"><span class="n">5</span><h3>Leading in business</h3><span class="yrs">Next</span><p>Management and internationalization, as a founder or in tech. Still travelling.</p><a href="#/overview/contact">Get in touch</a></li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="block tinted route" id="journey">
     <div class="wrap">
       <div class="head2">
-        <h2>Eight cities, five countries, one direction</h2>
+        <div><h2 class="h2">Where it happened</h2><p class="sub">Eight cities, five countries, one direction.</p></div>
         <p>Select a station to see what I studied, built and led there.</p>
       </div>
-      <ul class="legend" aria-label="Line colours">
-        <li><span class="badge eng">E</span>Engineering &amp; IoT</li>
-        <li><span class="badge biz">B</span>Business &amp; management</li>
-        <li><span class="badge lead">L</span>Leading people</li>
-        <li><span class="badge com">C</span>Community</li>
+      <ul class="legend" aria-label="Colour key">
+        <li><span class="dot fill-eng"></span>Engineering</li>
+        <li><span class="dot fill-biz"></span>Business</li>
+        <li><span class="dot fill-lead"></span>Leadership</li>
+        <li><span class="dot fill-com"></span>Community</li>
       </ul>
       <svg class="map" id="map" viewBox="0 40 1340 290" role="group" aria-label="Route map of the cities where Lucía has studied and worked"></svg>
       <ol class="stops" id="stops"></ol>
@@ -370,37 +420,26 @@ footer a{color:#C9D2E0}
 
   <div class="block">
     <div class="wrap sec">
-      <h2>About me</h2>
-      <div class="body">
-        <p class="lede">I'm a telecommunications engineer and business graduate specialising in IoT and energy efficiency, with experience in Spain, Poland, the United States and Japan.</p>
-        <p>What interests me most is the point where a new technology becomes a business, and where a business crosses a border. I've seen it from several sides. I spent three years developing IoT and energy-efficiency projects in Madrid, supported international ICT teams at Acciona and wrote start-up plans that won student competitions. Now I'm in Tokyo, doing internationalization research for European and Japanese companies.</p>
-        <p>I know I'm early in my career, and I'm here to keep learning. My goal is to grow into leadership and management, possibly through an MBA, while staying close to sectors that build new solutions, like IoT, energy and smart cities.</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="block">
-    <div class="wrap sec">
       <h2>What I can bring<small>As a recent graduate, here's what I already have</small></h2>
       <div class="body">
         <div class="strengths">
           <div class="strength" style="--c:var(--biz)">
-            <h3>A head start on internationalization</h3>
+            <h3><span class="dot"></span>A head start on internationalization</h3>
             <p>As a Vulcanus scholar, I research how industrial companies in Japan and Europe can enter each other's markets. At Acciona I supported ICT teams across every business unit and several countries. I work in Spanish and English, with French and Japanese in progress.</p>
             <a href="#/experience/vulcanus">See the roles</a>
           </div>
           <div class="strength" style="--c:var(--eng)">
-            <h3>Both sides of the conversation</h3>
+            <h3><span class="dot"></span>Both sides of the conversation</h3>
             <p>I trained as an engineer and in business at the same time. I've built IoT systems that ended up in a journal article, and I've written business plans. That means I can follow a technical discussion and explain what it means for the business.</p>
             <a href="#/projects">See the projects</a>
           </div>
           <div class="strength" style="--c:var(--lead)">
-            <h3>Experience leading people</h3>
+            <h3><span class="dot"></span>Experience leading people</h3>
             <p>I've led a group of students abroad and been a class representative and mentor. I sat on a Formula Student business board and spent years teaching and coaching skiers. None of it was a management title, but all of it meant being responsible for others.</p>
             <a href="#/experience/leading">See leading and teaching</a>
           </div>
           <div class="strength" style="--c:var(--com)">
-            <h3>An entrepreneurial way of thinking</h3>
+            <h3><span class="dot"></span>An entrepreneurial way of thinking</h3>
             <p>FlashEx won the FCCEE UGR ideas contest, GRANCOSOL won the Impronta Granada prize, and The Crew Barber was a full start-up plan with an MVP. They taught me to test an idea against real customers and numbers.</p>
             <a href="#/projects/ventures">See the start-ups</a>
           </div>
@@ -412,11 +451,11 @@ footer a{color:#C9D2E0}
     </div>
   </div>
 
-  <div class="block dark" id="contact">
+  <div class="block contactband" id="contact">
     <div class="wrap sec">
       <h2>Next station<small>Where I'm heading</small></h2>
       <div class="body">
-        <p class="lede">I'm looking for opportunities to grow into management and internationalization, ideally at companies building the future of energy, cities and connected technology.</p>
+        <p class="lede">I'm looking for opportunities to grow into management and internationalization, at companies building the future of energy, cities and connected technology, or alongside founders building something new.</p>
         <p>Roles in international business development, strategy, operations or technology management are where I think I can contribute most and learn fastest. If you're working on something like that, I'd love to talk.</p>
         <div class="contact">
           <a class="btn solid" href="https://www.linkedin.com/in/lucialopez-garcia/" target="_blank" rel="noopener">Message me on LinkedIn</a>
@@ -440,15 +479,14 @@ footer a{color:#C9D2E0}
       <h1>Experience</h1>
       <p>Six professional roles in four countries, plus years of being responsible for groups of people. Each entry ends with what it taught me.</p>
     </div>
-    <div class="stripe" aria-hidden="true"><i class="fill-biz"></i><i class="fill-eng"></i><i class="fill-lead"></i></div>
   </div></div>
 
   <div class="block"><div class="wrap">
     <div class="filters" role="group" aria-label="Filter by line"><span>Show</span>
       <button type="button" data-line="all" aria-pressed="true">Everything</button>
-      <button type="button" data-line="biz" aria-pressed="false"><i class="fill-biz"></i>Business &amp; management</button>
-      <button type="button" data-line="eng" aria-pressed="false"><i class="fill-eng"></i>Engineering &amp; IoT</button>
-      <button type="button" data-line="lead" aria-pressed="false"><i class="fill-lead"></i>Leading people</button>
+      <button type="button" data-line="biz" aria-pressed="false"><i class="fill-biz"></i>Business</button>
+      <button type="button" data-line="eng" aria-pressed="false"><i class="fill-eng"></i>Engineering</button>
+      <button type="button" data-line="lead" aria-pressed="false"><i class="fill-lead"></i>Leadership</button>
     </div>
 
     <div class="group" id="professional">
@@ -600,14 +638,13 @@ footer a{color:#C9D2E0}
       <h1>Projects and research</h1>
       <p>IoT systems built for real clients, research that reached a journal, and start-up ideas tested in competitions.</p>
     </div>
-    <div class="stripe" aria-hidden="true"><i class="fill-eng"></i><i class="fill-biz"></i></div>
   </div></div>
 
   <div class="block"><div class="wrap">
     <div class="filters" role="group" aria-label="Filter by line"><span>Show</span>
       <button type="button" data-line="all" aria-pressed="true">Everything</button>
-      <button type="button" data-line="eng" aria-pressed="false"><i class="fill-eng"></i>Engineering &amp; IoT</button>
-      <button type="button" data-line="biz" aria-pressed="false"><i class="fill-biz"></i>Business &amp; management</button>
+      <button type="button" data-line="eng" aria-pressed="false"><i class="fill-eng"></i>Engineering</button>
+      <button type="button" data-line="biz" aria-pressed="false"><i class="fill-biz"></i>Business</button>
       <button type="button" data-line="com" aria-pressed="false"><i class="fill-com"></i>Community</button>
     </div>
 
@@ -615,10 +652,12 @@ footer a{color:#C9D2E0}
       <h2>Publications</h2>
       <p class="gi">Both papers come from the IoT monitoring system I worked on for Stulz's data-centre cooling units.</p>
       <div class="pub" data-place="madrid" data-lines="eng">
+        <span class="k">Journal article</span>
         <span class="t">EMC-aware validation of a distributed measurement system for intelligent air-handling units in data centers</span>
         <span class="m"><em>Measurement</em> (journal), August 2026. <a href="https://www.sciencedirect.com/science/article/pii/S0263224126029210" target="_blank" rel="noopener">Read on ScienceDirect</a></span>
       </div>
       <div class="pub" data-place="madrid" data-lines="eng">
+        <span class="k">Conference paper</span>
         <span class="t">Development and Implementation of an IoT System for Monitoring the Intelligent Air Handling Unit in Data Centers</span>
         <span class="m">ICCIDA conference, June 2025</span>
       </div>
@@ -672,7 +711,6 @@ footer a{color:#C9D2E0}
       <h1>Education</h1>
       <p>Engineering and business studied side by side, across five universities in three countries.</p>
     </div>
-    <div class="stripe" aria-hidden="true"><i class="fill-eng"></i><i class="fill-biz"></i></div>
   </div></div>
 
   <div class="block"><div class="wrap">
@@ -750,25 +788,25 @@ footer a{color:#C9D2E0}
     <div class="cluster" id="programmes">
       <h2>Talent and leadership programmes</h2>
       <ul class="plain">
-        <li data-place="tokyo" data-lines="biz eng"><span class="lines"></span><span><span class="t">Vulcanus in Japan</span><span class="m">EU-Japan Centre for Industrial Cooperation, from 2026. Scholarship for European students in Japanese industry.</span></span></li>
-        <li data-place="granada" data-lines="biz"><span class="lines"></span><span><span class="t">Business Skills</span><span class="m">UGR Emprendedora, 2023 – 2024. Programme for entrepreneurs.</span></span></li>
-        <li data-place="madrid" data-lines="eng biz"><span class="lines"></span><span><span class="t">Liderazgo Tech GL</span><span class="m">Banco Santander, 2021 – 2022. Leadership for students in technology.</span></span></li>
-        <li data-place="santander" data-lines="eng lead"><span class="lines"></span><span><span class="t">STEM Talent Girl</span><span class="m">Fundación ASTI, 2018 – 2020. Mentoring for women in STEM.</span></span></li>
-        <li data-place="santander" data-lines="eng"><span class="lines"></span><span><span class="t">ESTALMAT, Estímulo del Talento Matemático</span><span class="m">Universidad de Cantabria, 2014 – 2017. Programme for mathematically gifted students.</span></span></li>
+        <li data-place="tokyo" data-lines="biz eng"><span><span class="t">Vulcanus in Japan</span><span class="m">EU-Japan Centre for Industrial Cooperation, from 2026. Scholarship for European students in Japanese industry.</span></span><span class="lines"></span></li>
+        <li data-place="granada" data-lines="biz"><span><span class="t">Business Skills</span><span class="m">UGR Emprendedora, 2023 – 2024. Programme for entrepreneurs.</span></span><span class="lines"></span></li>
+        <li data-place="madrid" data-lines="eng biz"><span><span class="t">Liderazgo Tech GL</span><span class="m">Banco Santander, 2021 – 2022. Leadership for students in technology.</span></span><span class="lines"></span></li>
+        <li data-place="santander" data-lines="eng lead"><span><span class="t">STEM Talent Girl</span><span class="m">Fundación ASTI, 2018 – 2020. Mentoring for women in STEM.</span></span><span class="lines"></span></li>
+        <li data-place="santander" data-lines="eng"><span><span class="t">ESTALMAT, Estímulo del Talento Matemático</span><span class="m">Universidad de Cantabria, 2014 – 2017. Programme for mathematically gifted students.</span></span><span class="lines"></span></li>
       </ul>
     </div>
 
     <div class="cluster" id="certifications">
       <h2>Certifications</h2>
       <ul class="plain">
-        <li data-lines="biz eng"><span class="lines"></span><span><span class="t">Power BI</span><span class="m">Santander, 2025</span></span></li>
-        <li data-lines="biz lead"><span class="lines"></span><span><span class="t">Harvard ManageMentor</span><span class="m">Harvard Business Review, 2024. Leadership and team leadership</span></span></li>
-        <li data-lines="eng"><span class="lines"></span><span><span class="t">AI Fundamentals</span><span class="m">IBM, 2024. <a href="https://www.credly.com/badges/3c82747a-5d8d-4b64-88d0-798197aee87e/public_url" target="_blank" rel="noopener">View credential</a></span></span></li>
-        <li data-lines="biz"><span class="lines"></span><span><span class="t">Fundamentals of Private Banking and Wealth Management</span><span class="m">Santander, 2023</span></span></li>
-        <li data-place="madrid" data-lines="eng com"><span class="lines"></span><span><span class="t">Smart Cities Summer Course</span><span class="m">Universidad Rey Juan Carlos</span></span></li>
-        <li data-lines="biz"><span class="lines"></span><span><span class="t">Fundamentals of Digital Marketing</span><span class="m">Google, 2020</span></span></li>
-        <li data-lines="lead"><span class="lines"></span><span><span class="t">Técnico Deportivo de Esquí, Nivel I</span><span class="m">Centro de Formación de Técnicos Deportivos, 2019</span></span></li>
-        <li><span class="lines"></span><span><span class="t">Cambridge Advanced (C1)</span><span class="m">University of Cambridge, 2018</span></span></li>
+        <li data-lines="biz eng"><span><span class="t">Power BI</span><span class="m">Santander, 2025</span></span><span class="lines"></span></li>
+        <li data-lines="biz lead"><span><span class="t">Harvard ManageMentor</span><span class="m">Harvard Business Review, 2024. Leadership and team leadership</span></span><span class="lines"></span></li>
+        <li data-lines="eng"><span><span class="t">AI Fundamentals</span><span class="m">IBM, 2024. <a href="https://www.credly.com/badges/3c82747a-5d8d-4b64-88d0-798197aee87e/public_url" target="_blank" rel="noopener">View credential</a></span></span><span class="lines"></span></li>
+        <li data-lines="biz"><span><span class="t">Fundamentals of Private Banking and Wealth Management</span><span class="m">Santander, 2023</span></span><span class="lines"></span></li>
+        <li data-place="madrid" data-lines="eng com"><span><span class="t">Smart Cities Summer Course</span><span class="m">Universidad Rey Juan Carlos</span></span><span class="lines"></span></li>
+        <li data-lines="biz"><span><span class="t">Fundamentals of Digital Marketing</span><span class="m">Google, 2020</span></span><span class="lines"></span></li>
+        <li data-lines="lead"><span><span class="t">Técnico Deportivo de Esquí, Nivel I</span><span class="m">Centro de Formación de Técnicos Deportivos, 2019</span></span><span class="lines"></span></li>
+        <li><span><span class="t">Cambridge Advanced (C1)</span><span class="m">University of Cambridge, 2018</span></span><span class="lines"></span></li>
       </ul>
     </div>
 
@@ -798,7 +836,6 @@ footer a{color:#C9D2E0}
       <h1>Beyond work</h1>
       <p>Volunteering, sport and creative projects. This is where a lot of my teamwork, patience and drive comes from.</p>
     </div>
-    <div class="stripe" aria-hidden="true"><i class="fill-com"></i><i class="fill-lead"></i></div>
   </div></div>
 
   <div class="block"><div class="wrap">
@@ -871,8 +908,7 @@ const AHEAD = {x:1220, y:130, name:"Next", sub:"Management and internationalizat
 const START = "tokyo";
 const VIEWS = ["overview","experience","projects","education","beyond"];
 
-const LINE_NAMES = {eng:"Engineering & IoT", biz:"Business & management", lead:"Leading people", com:"Community"};
-const LETTER = {eng:"E", biz:"B", lead:"L", com:"C"};
+const LINE_NAMES = {eng:"Engineering", biz:"Business", lead:"Leadership", com:"Community"};
 const NS = "http://www.w3.org/2000/svg";
 const $$ = (s, r=document) => [...r.querySelectorAll(s)];
 const linesOf = el => (el.dataset.lines || "").trim().split(/\s+/).filter(Boolean);
@@ -887,8 +923,7 @@ $$("[data-lines], [data-place]").forEach(el=>{
   if(!slot) return;
   ls.forEach(l=>{
     const b = document.createElement("i");
-    b.className = "badge " + l; b.textContent = LETTER[l];
-    b.title = LINE_NAMES[l]; b.setAttribute("role","img"); b.setAttribute("aria-label", LINE_NAMES[l]);
+    b.className = "tag " + l; b.textContent = LINE_NAMES[l];
     slot.appendChild(b);
   });
 });
@@ -910,7 +945,7 @@ STATIONS.forEach((s, i)=>{
   g.style.setProperty("--d", delay);
   mk("circle",{cx:s.x, cy:s.y, r:34, class:"hit"}, g);
   if(s.loop) mk("circle",{cx:s.x, cy:s.y, r:19, class:"ring"}, g);
-  mk("circle",{cx:s.x, cy:s.y, r:13, class:"dot"}, g);
+  mk("circle",{cx:s.x, cy:s.y, r:13, class:"dot2"}, g);
   const up = s.label === "above";
   const lbl = mk("g",{class:"lbl", "aria-hidden":"true"});
   lbl.style.setProperty("--d", delay);
@@ -926,7 +961,7 @@ STATIONS.forEach((s, i)=>{
 });
 const nx = mk("g",{class:"next lbl", "aria-hidden":"true"});
 nx.style.setProperty("--d","2.1s");
-mk("circle",{cx:AHEAD.x, cy:AHEAD.y, r:13, class:"dot"}, nx);
+mk("circle",{cx:AHEAD.x, cy:AHEAD.y, r:13, class:"dot2"}, nx);
 mk("text",{x:AHEAD.x, y:AHEAD.y-58, "text-anchor":"middle", class:"name"}, nx).textContent = AHEAD.name;
 mk("text",{x:AHEAD.x, y:AHEAD.y-38, "text-anchor":"middle", class:"yrs"}, nx).textContent = AHEAD.sub;
 
@@ -979,7 +1014,7 @@ function route(){
   const target = id && document.getElementById(id);
   if(target){
     target.hidden = false; const c = target.closest(".group,.cluster"); if(c) c.hidden = false;
-    requestAnimationFrame(()=>{ target.scrollIntoView({block:"start", behavior:"instant"}); target.classList.remove("flash"); void target.offsetWidth; target.classList.add("flash"); });
+    requestAnimationFrame(()=>{ target.scrollIntoView({block:"start", behavior:"instant"}); if(!target.matches(".cluster,.group")){ target.classList.remove("flash"); void target.offsetWidth; target.classList.add("flash"); } });
   } else {
     window.scrollTo({top:0, behavior:"instant"});
   }
