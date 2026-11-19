@@ -1,0 +1,1002 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lucía López García</title>
+<meta name="description" content="Telecommunications engineer and business graduate based in Tokyo. Extended CV: experience, projects, education and everything in between.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Lucía López García, extended CV">
+<meta property="og:description" content="Telecommunications engineer and business graduate, working toward management and internationalization in IoT, energy and smart cities.">
+<!-- Optional preview image for LinkedIn/WhatsApp shares: add og.jpg (1200x630) to the repo and uncomment.
+<meta property="og:image" content="https://YOUR-USERNAME.github.io/YOUR-REPO/og.jpg"> -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='11' fill='%23F2F4F6' stroke='%23152034' stroke-width='6'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;400;600;800&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet">
+<style>
+/* =====================================================================
+   HOW TO EDIT
+   - Pages are the <section class="view" data-view="..."> blocks below.
+   - Each item can carry:
+       data-place="madrid"   → links it to a station on the route map
+       data-lines="eng biz"  → colour badges and filters
+                               (eng = Engineering & IoT, biz = Business & management,
+                                lead = Leading people, com = Community)
+   - Stations (cities) live in STATIONS in the <script> at the bottom.
+   - Optional files next to index.html: photo.jpg (portrait), cv.pdf (short CV:
+     the "Download short CV" button appears automatically when it exists).
+   ===================================================================== */
+:root{
+  --paper:#F2F4F6; --paper-2:#E6EAEF; --white:#fff;
+  --ink:#152034; --ink-2:#22304A; --muted:#59647A; --rule:#D3D9E1;
+  --eng:#2457C5; --biz:#C7860A; --lead:#C4413A; --com:#1F8A62;
+  --amber:#F2B53A;
+  --display:"Overpass","Helvetica Neue",Arial,sans-serif;
+  --text:"Newsreader",Georgia,"Times New Roman",serif;
+  --wrap:1180px;
+}
+*{box-sizing:border-box}
+[hidden]{display:none !important}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--text);font-size:1.125rem;line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration-thickness:1px;text-underline-offset:3px}
+a:hover{color:var(--eng)}
+:focus-visible{outline:3px solid var(--eng);outline-offset:3px;border-radius:2px}
+.wrap{max-width:var(--wrap);margin:0 auto;padding-left:32px;padding-right:32px}
+.skip{position:absolute;left:-9999px;top:8px;background:#fff;padding:8px 14px;z-index:99;font-family:var(--display)}
+.skip:focus{left:12px}
+
+/* ---------- Top bar ---------- */
+.topbar{position:sticky;top:0;z-index:50;background:var(--ink);color:#fff;border-bottom:1px solid rgba(255,255,255,.08)}
+.topbar .wrap{display:flex;align-items:center;gap:28px;height:64px}
+.brand{display:flex;align-items:center;gap:10px;font-family:var(--display);font-weight:800;font-size:1rem;text-decoration:none;color:#fff;white-space:nowrap}
+.brand:hover{color:#fff}
+.brand i{width:16px;height:16px;border-radius:50%;border:4px solid #fff;flex:none}
+.topbar nav{display:flex;gap:4px;margin-left:auto;overflow-x:auto;scrollbar-width:none}
+.topbar nav::-webkit-scrollbar{display:none}
+.topbar nav a{font-family:var(--display);font-size:.95rem;color:#C9D2E0;text-decoration:none;padding:8px 12px;border-radius:4px;white-space:nowrap;position:relative}
+.topbar nav a:hover{color:#fff;background:var(--ink-2)}
+.topbar nav a[aria-current="page"]{color:#fff}
+.topbar nav a[aria-current="page"]{box-shadow:inset 0 -3px 0 var(--amber);border-radius:4px 4px 0 0}
+.topbar .cta{font-family:var(--display);font-weight:600;font-size:.92rem;background:#fff;color:var(--ink);text-decoration:none;padding:8px 14px;border-radius:4px;white-space:nowrap}
+.topbar .cta:hover{background:var(--amber);color:var(--ink)}
+
+/* ---------- Hero (overview) ---------- */
+.sign{background:var(--ink);color:#fff}
+.sign .wrap{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:56px;align-items:center;padding-top:72px;padding-bottom:64px}
+.portrait{width:88px;height:88px;border-radius:50%;object-fit:cover;border:4px solid #fff;margin-bottom:22px;display:block}
+.sign h1{font-family:var(--display);font-weight:800;font-size:clamp(2.7rem,6.6vw,5.4rem);line-height:.95;letter-spacing:-.025em;margin:0}
+.sign .role{font-family:var(--display);font-weight:300;font-size:clamp(1.15rem,2vw,1.45rem);line-height:1.38;margin:22px 0 0;max-width:34ch;color:#DCE3EE}
+.sign .intro{color:#B9C4D6;font-size:1.08rem;max-width:52ch;margin:18px 0 0}
+.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.btn{font-family:var(--display);font-weight:600;font-size:.98rem;text-decoration:none;padding:11px 18px;border-radius:4px;border:2px solid #fff;color:#fff;display:inline-block}
+.btn.solid{background:#fff;color:var(--ink)}
+.btn:hover{background:var(--amber);border-color:var(--amber);color:var(--ink)}
+
+.board{background:#0E1626;border-radius:6px;padding:22px 24px 10px;box-shadow:inset 0 0 0 1px rgba(255,255,255,.06)}
+.board h2{font-family:var(--display);font-weight:600;font-size:.95rem;color:#8E9AB0;margin:0 0 10px;display:flex;justify-content:space-between}
+.board h2 .clock{color:var(--amber);font-variant-numeric:tabular-nums}
+.board ul{list-style:none;margin:0;padding:0}
+.board li{display:grid;grid-template-columns:62px 1fr;gap:4px 14px;padding:13px 0;border-top:1px solid rgba(255,255,255,.08)}
+.board .when{font-family:var(--display);font-weight:800;font-size:.85rem;color:var(--amber);padding-top:3px}
+.board .what{font-family:var(--display);font-weight:600;font-size:1.02rem;line-height:1.3;color:#fff}
+.board .what small{display:block;font-weight:400;font-size:.88rem;color:#9FAABD;margin-top:2px}
+.board a{text-decoration:none}
+.board a:hover .what{color:var(--amber)}
+.linebar{display:flex;height:8px}
+.linebar span{flex:1}
+
+/* ---------- Route map ---------- */
+.route{padding:56px 0 64px;border-bottom:1px solid var(--rule)}
+.head2{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:10px 32px}
+.head2 h2{font-family:var(--display);font-weight:800;font-size:1.6rem;letter-spacing:-.01em;margin:0}
+.head2 p{margin:0;color:var(--muted);font-size:1.02rem;max-width:60ch}
+.legend{display:flex;flex-wrap:wrap;gap:6px 20px;margin:16px 0 0;padding:0;list-style:none;font-family:var(--display);font-size:.9rem;color:var(--muted)}
+.legend li{display:flex;align-items:center;gap:8px}
+.badge{display:inline-grid;place-items:center;width:20px;height:20px;border-radius:50%;color:#fff;font-family:var(--display);font-weight:800;font-size:.68rem;line-height:1;flex:none;font-style:normal}
+.badge.eng,.fill-eng{background:var(--eng)} .badge.biz,.fill-biz{background:var(--biz)} .badge.lead,.fill-lead{background:var(--lead)} .badge.com,.fill-com{background:var(--com)}
+
+.map{width:100%;height:auto;display:block;margin-top:6px;overflow:visible}
+.map .track{fill:none;stroke:var(--ink);stroke-width:9;stroke-linejoin:round;stroke-linecap:round}
+.map .ahead{fill:none;stroke:var(--ink);stroke-width:9;stroke-dasharray:2 16;stroke-linecap:round;opacity:.55}
+.map .stn{cursor:pointer;outline:none}
+.map .stn .hit{fill:transparent}
+.map .stn .dot{fill:var(--paper);stroke:var(--ink);stroke-width:4.5;transition:fill .15s}
+.map .stn .ring{fill:none;stroke:var(--ink);stroke-width:2}
+.map .stn:hover .dot{fill:var(--paper-2)}
+.map .stn[aria-pressed="true"] .dot{fill:var(--ink)}
+.map .stn:focus-visible .dot{stroke:var(--eng);stroke-width:6}
+.map .name{font-family:var(--display);font-weight:600;font-size:19px;fill:var(--ink)}
+.map .yrs{font-family:var(--display);font-size:14px;fill:var(--muted)}
+.map .here{font-family:var(--text);font-style:italic;font-size:15px;fill:var(--lead)}
+.map .next .name{fill:var(--muted)}
+.map .next .dot{fill:var(--paper);stroke:var(--muted);stroke-dasharray:3 4;stroke-width:3}
+
+.stops{display:none;list-style:none;margin:20px 0 0;padding:0 0 0 6px}
+.stops li{position:relative;padding:0 0 0 30px;border-left:6px solid var(--ink)}
+.stops li:last-child{border-left-style:dotted;border-left-color:var(--muted)}
+.stops button{all:unset;cursor:pointer;display:block;padding:8px 0 16px;font-family:var(--display);font-weight:600;font-size:1.05rem}
+.stops button small{display:block;font-weight:400;color:var(--muted);font-size:.85rem}
+.stops button::before{content:"";position:absolute;left:-15px;top:9px;width:16px;height:16px;border-radius:50%;background:var(--paper);border:4px solid var(--ink)}
+.stops button[aria-pressed="true"]::before{background:var(--ink)}
+.stops button:focus-visible{outline:3px solid var(--eng)}
+.stops button:disabled{cursor:default;color:var(--muted)}
+
+.panel{margin-top:18px;background:var(--white);border-left:6px solid var(--ink);padding:24px 28px 26px}
+.panel h3{font-family:var(--display);font-weight:800;font-size:1.6rem;margin:0;letter-spacing:-.01em}
+.panel .sub{margin:2px 0 12px;color:var(--muted);font-family:var(--display);font-size:.95rem}
+.panel .intro{margin:0 0 16px;max-width:70ch}
+.panel .groups{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px 36px}
+.panel h4{font-family:var(--display);font-weight:600;font-size:.9rem;color:var(--muted);margin:0 0 6px}
+.panel ul{list-style:none;margin:0 0 4px;padding:0}
+.panel li{display:flex;gap:10px;align-items:flex-start;padding:3px 0;font-size:1rem;line-height:1.4}
+.pips{display:flex;gap:3px;padding-top:5px;flex:none;width:30px}
+.pips i{width:8px;height:8px;border-radius:50%}
+.panel a{text-decoration:none}
+.panel a:hover{text-decoration:underline}
+
+/* ---------- Generic blocks ---------- */
+.block{padding:72px 0;border-bottom:1px solid var(--rule)}
+.sec{display:grid;grid-template-columns:230px minmax(0,1fr);gap:28px 56px}
+.sec > h2{font-family:var(--display);font-weight:600;font-size:1.35rem;line-height:1.2;margin:0;position:sticky;top:96px;align-self:start}
+.sec > h2 small{display:block;font-weight:300;font-size:1rem;color:var(--muted);margin-top:6px;line-height:1.35}
+.lede{font-size:1.3rem;line-height:1.55;margin:0 0 18px;max-width:58ch}
+.body p{max-width:68ch}
+
+.strengths{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:36px 48px}
+.strength{border-top:6px solid var(--c)}
+.strength h3{font-family:var(--display);font-weight:800;font-size:1.2rem;margin:16px 0 6px}
+.strength p{margin:0;font-size:1.05rem}
+.strength a{font-family:var(--display);font-size:.92rem;display:inline-block;margin-top:10px}
+.skills{list-style:none;margin:40px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:8px}
+.skills li{font-family:var(--display);font-size:.92rem;padding:5px 12px;border:1.5px solid var(--ink);border-radius:999px}
+
+/* ---------- Page heads ---------- */
+.pagehead{background:var(--white);border-bottom:1px solid var(--rule)}
+.pagehead .wrap{padding-top:56px;padding-bottom:40px;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:20px 40px;align-items:end}
+.pagehead h1{font-family:var(--display);font-weight:800;font-size:clamp(2.3rem,5vw,3.6rem);letter-spacing:-.02em;line-height:1;margin:0}
+.pagehead p{margin:14px 0 0;max-width:60ch;color:var(--muted);font-size:1.12rem}
+.pagehead .stripe{display:flex;gap:6px}
+.pagehead .stripe i{width:10px;height:56px;border-radius:5px}
+
+.filters{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 36px}
+.filters span{font-family:var(--display);font-size:.9rem;color:var(--muted);align-self:center;margin-right:4px}
+.filters button{font-family:var(--display);font-size:.9rem;background:transparent;border:1.5px solid var(--rule);color:var(--ink);padding:6px 12px 5px;border-radius:999px;cursor:pointer;display:flex;align-items:center;gap:7px}
+.filters button i{width:10px;height:10px;border-radius:50%}
+.filters button:hover{border-color:var(--ink)}
+.filters button[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:#fff}
+
+/* ---------- Metro timeline ---------- */
+.group{margin:0 0 64px}
+.group:last-child{margin-bottom:0}
+.group > h2{font-family:var(--display);font-weight:800;font-size:1.5rem;margin:0 0 6px;letter-spacing:-.01em}
+.group > p.gi{color:var(--muted);margin:0 0 28px;max-width:64ch}
+.timeline{position:relative;padding-left:52px}
+.timeline::before{content:"";position:absolute;left:16px;top:10px;bottom:10px;width:6px;background:var(--ink);border-radius:3px}
+.entry{position:relative;padding:0 0 40px}
+.entry:last-child{padding-bottom:0}
+.entry::before{content:"";position:absolute;left:-45px;top:4px;width:22px;height:22px;border-radius:50%;background:var(--paper);border:5px solid var(--c,var(--ink));box-sizing:border-box}
+.entry.now::before{background:var(--c,var(--ink))}
+.entry header{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:2px 20px;align-items:baseline;margin-bottom:10px}
+.entry h3{font-family:var(--display);font-weight:800;font-size:1.3rem;line-height:1.25;margin:0}
+.entry .org{grid-column:1;font-family:var(--display);font-size:1.06rem;margin:0}
+.entry .when{grid-column:2;grid-row:1;font-family:var(--display);font-size:.95rem;color:var(--muted);white-space:nowrap;text-align:right;margin:0}
+.entry .where{grid-column:2;grid-row:2;font-family:var(--display);font-size:.95rem;color:var(--muted);text-align:right;margin:0}
+.entry p{margin:0 0 10px;max-width:68ch}
+.entry .learnt{font-style:italic;border-left:3px solid var(--c,var(--rule));padding-left:14px;color:var(--ink-2)}
+.entry .note{font-family:var(--display);font-size:.92rem;color:var(--muted)}
+.lines{display:flex;gap:4px;margin-top:6px}
+.sublist{list-style:none;margin:14px 0 6px;padding:0;border-left:3px solid var(--rule)}
+.sublist li{padding:4px 0 10px 18px}
+.sublist .t{font-family:var(--display);font-weight:600;font-size:1.02rem;display:block;line-height:1.35}
+.sublist .m{font-family:var(--display);font-size:.9rem;color:var(--muted)}
+.sublist p{margin:4px 0 0;font-size:1.02rem}
+
+.flash{animation:flash 1.6s ease-out}
+@keyframes flash{0%,30%{background:#FBEFD2}100%{background:transparent}}
+
+/* ---------- Cards ---------- */
+.cluster{margin:0 0 56px}
+.cluster:last-child{margin-bottom:0}
+.cluster > h2{font-family:var(--display);font-weight:800;font-size:1.5rem;margin:0 0 6px;letter-spacing:-.01em}
+.cluster > p.gi{color:var(--muted);margin:0 0 20px;font-size:1.04rem;max-width:64ch}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px}
+.card{background:var(--white);padding:20px 22px 22px;position:relative;border-top:5px solid var(--c,var(--ink))}
+.card .t{font-family:var(--display);font-weight:800;font-size:1.1rem;line-height:1.3;display:block;padding-right:56px}
+.card .m{font-family:var(--display);font-size:.86rem;color:var(--muted);display:block;margin:4px 0 10px}
+.card p{margin:0;font-size:1.02rem;line-height:1.5}
+.card .lines{position:absolute;top:18px;right:18px;margin:0;gap:3px}
+.card .lines .badge{width:17px;height:17px;font-size:.6rem}
+.prize{display:inline-block;margin-top:12px;font-family:var(--display);font-weight:600;font-size:.85rem;color:var(--ink);background:#F7E7C2;padding:3px 9px;border-radius:3px}
+.card a.more{font-family:var(--display);font-size:.9rem;display:inline-block;margin-top:10px}
+
+.pub{background:var(--white);padding:24px 26px;border-left:6px solid var(--eng);margin:0 0 14px}
+.pub .t{font-family:var(--display);font-weight:800;font-size:1.12rem;line-height:1.35;display:block}
+.pub .m{font-family:var(--display);font-size:.92rem;color:var(--muted);display:block;margin-top:6px}
+
+.plain{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:0 40px}
+.plain li{padding:12px 0;border-bottom:1px solid var(--rule);display:flex;gap:12px}
+.plain .t{font-family:var(--display);font-weight:600;font-size:1rem;display:block;line-height:1.35}
+.plain .m{font-family:var(--display);font-size:.88rem;color:var(--muted)}
+.plain .lines{margin:2px 0 0}
+.plain .lines .badge{width:17px;height:17px;font-size:.6rem}
+
+.langs{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px}
+.lang h3{font-family:var(--display);font-weight:800;font-size:1.15rem;margin:0}
+.lang p{margin:2px 0 10px;font-family:var(--display);font-size:.92rem;color:var(--muted)}
+.meter{height:6px;background:var(--paper-2);position:relative}
+.meter span{position:absolute;inset:0 auto 0 0;background:var(--ink)}
+
+/* ---------- Contact / next stop ---------- */
+.dark{background:var(--ink);color:#fff;border:0}
+.dark .sec > h2 small{color:#AEB8C9}
+.dark p{color:#D7DEEA}
+.contact{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+
+.nextstop{border-top:1px solid var(--rule)}
+.nextstop .wrap{display:flex;justify-content:space-between;gap:20px;padding-top:28px;padding-bottom:28px;font-family:var(--display)}
+.nextstop a{text-decoration:none;display:block}
+.nextstop small{display:block;color:var(--muted);font-size:.85rem}
+.nextstop strong{font-size:1.25rem;font-weight:800}
+.nextstop a:last-child{text-align:right;margin-left:auto}
+.nextstop a:hover strong{color:var(--eng)}
+
+footer{background:var(--ink);color:#8E9AB0;font-family:var(--display);font-size:.85rem}
+footer .wrap{padding-top:22px;padding-bottom:22px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+footer a{color:#C9D2E0}
+
+/* ---------- Load moment: the line draws itself once ---------- */
+@media (prefers-reduced-motion:no-preference){
+  .map .track{stroke-dasharray:var(--len);stroke-dashoffset:var(--len);animation:draw 1.8s cubic-bezier(.6,.05,.3,1) .2s forwards}
+  .map .stn,.map .lbl{opacity:0;animation:pop .35s ease-out forwards;animation-delay:var(--d)}
+  .map .ahead{opacity:0;animation:fade .6s ease-out 2s forwards}
+  @keyframes draw{to{stroke-dashoffset:0}}
+  @keyframes pop{to{opacity:1}}
+  @keyframes fade{to{opacity:.55}}
+}
+@media (prefers-reduced-motion:reduce){.flash{animation:none}}
+
+/* ---------- Responsive ---------- */
+@media (max-width:980px){
+  .sign .wrap{grid-template-columns:1fr;gap:40px}
+  .sec{grid-template-columns:1fr;gap:20px}
+  .sec > h2{position:static}
+  .strengths{grid-template-columns:1fr}
+  .langs{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media (max-width:760px){
+  .wrap{padding-left:20px;padding-right:20px}
+  .topbar .wrap{gap:12px;height:56px}
+  .brand span{display:none}
+  .topbar .cta{display:none}
+  .map{display:none}
+  .stops{display:block}
+  .block{padding:52px 0}
+  .sign .wrap{padding-top:48px;padding-bottom:44px}
+  .pagehead .wrap{grid-template-columns:1fr;padding-top:40px;padding-bottom:28px}
+  .pagehead .stripe{display:none}
+  .timeline{padding-left:40px}
+  .timeline::before{left:10px}
+  .entry::before{left:-37px}
+  .entry header{grid-template-columns:1fr}
+  .entry .when,.entry .where{grid-column:1;grid-row:auto;text-align:left}
+  .panel{padding:20px}
+  .cards{grid-template-columns:1fr}
+}
+
+/* ---------- Print: every page, one after another ---------- */
+@media print{
+  body{background:#fff;font-size:10.5pt}
+  .topbar,.route,.filters,.nextstop,.actions,.board,.skip{display:none !important}
+  .view[hidden]{display:block !important}
+  .sign,.dark{background:#fff;color:var(--ink)} .sign .role,.sign .intro,.dark p{color:var(--muted)}
+  .entry,.card,.strength,.pub{break-inside:avoid}
+  .sec > h2{position:static}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#content">Skip to content</a>
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="#/"><i aria-hidden="true"></i><span>Lucía López García</span></a>
+    <nav aria-label="Pages">
+      <a href="#/" data-nav="overview">Overview</a>
+      <a href="#/experience" data-nav="experience">Experience</a>
+      <a href="#/projects" data-nav="projects">Projects</a>
+      <a href="#/education" data-nav="education">Education</a>
+      <a href="#/beyond" data-nav="beyond">Beyond work</a>
+    </nav>
+    <a class="cta" href="#/overview/contact">Get in touch</a>
+  </div>
+</header>
+
+<div id="content">
+
+<!-- =================================================================
+     OVERVIEW
+     ================================================================= -->
+<section class="view" data-view="overview" data-label="Overview" data-title="Lucía López García">
+
+  <div class="sign">
+    <div class="wrap">
+      <div>
+        <!-- Add photo.jpg next to this file; it hides itself if missing -->
+        <img class="portrait" src="photo.jpg" alt="Portrait of Lucía López García" onerror="this.remove()">
+        <h1>Lucía<br>López García</h1>
+        <p class="role">Telecommunications engineer and business graduate, working toward management and internationalization in IoT, energy and smart cities.</p>
+        <p class="intro">I'm at the start of my career, and so far I've spent it learning in very different places: research labs, a racing team, start-up contests, theme parks and now Japanese industry. This page collects all of it.</p>
+        <div class="actions">
+          <a class="btn solid" href="#/overview/journey">Explore my journey</a>
+          <a class="btn" href="#/overview/contact">Get in touch</a>
+          <a class="btn" href="cv.pdf" id="cv-link" hidden download>Download short CV</a>
+        </div>
+      </div>
+
+      <div class="board" aria-label="Where I am now">
+        <h2><span>Where I am now</span><span class="clock" id="clock" aria-hidden="true"></span></h2>
+        <ul>
+          <li><span class="when">Now</span><a href="#/experience/vulcanus"><span class="what">Vulcanus scholar, EU-Japan Centre for Industrial Cooperation<small>Internationalization research, Tokyo</small></span></a></li>
+          <li><span class="when">Now</span><a href="#/experience/vena"><span class="what">Technical Services Intern, Vena Energy<small>PMO platform for renewable projects, Tokyo</small></span></a></li>
+          <li><span class="when">2026</span><a href="#/education/muit"><span class="what">MEng, Telecommunications Engineering<small>Universidad de Valladolid</small></span></a></li>
+          <li><span class="when">2026</span><a href="#/projects/publications"><span class="what">First journal article<small>Published in <em>Measurement</em></small></span></a></li>
+          <li><span class="when">Next</span><a href="#/overview/contact"><span class="what">Management and internationalization in tech<small>Open to opportunities, with an MBA in mind</small></span></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="linebar" aria-hidden="true"><span class="fill-eng"></span><span class="fill-biz"></span><span class="fill-lead"></span><span class="fill-com"></span></div>
+  </div>
+
+  <div class="route" id="journey">
+    <div class="wrap">
+      <div class="head2">
+        <h2>Eight cities, five countries, one direction</h2>
+        <p>Select a station to see what I studied, built and led there.</p>
+      </div>
+      <ul class="legend" aria-label="Line colours">
+        <li><span class="badge eng">E</span>Engineering &amp; IoT</li>
+        <li><span class="badge biz">B</span>Business &amp; management</li>
+        <li><span class="badge lead">L</span>Leading people</li>
+        <li><span class="badge com">C</span>Community</li>
+      </ul>
+      <svg class="map" id="map" viewBox="0 40 1340 290" role="group" aria-label="Route map of the cities where Lucía has studied and worked"></svg>
+      <ol class="stops" id="stops"></ol>
+      <div class="panel" id="panel" aria-live="polite"></div>
+    </div>
+  </div>
+
+  <div class="block">
+    <div class="wrap sec">
+      <h2>About me</h2>
+      <div class="body">
+        <p class="lede">I'm a telecommunications engineer and business graduate specialising in IoT and energy efficiency, with experience in Spain, Poland, the United States and Japan.</p>
+        <p>What interests me most is the point where a new technology becomes a business, and where a business crosses a border. I've seen it from several sides. I spent three years developing IoT and energy-efficiency projects in Madrid, supported international ICT teams at Acciona and wrote start-up plans that won student competitions. Now I'm in Tokyo, doing internationalization research for European and Japanese companies.</p>
+        <p>I know I'm early in my career, and I'm here to keep learning. My goal is to grow into leadership and management, possibly through an MBA, while staying close to sectors that build new solutions, like IoT, energy and smart cities.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="block">
+    <div class="wrap sec">
+      <h2>What I can bring<small>As a recent graduate, here's what I already have</small></h2>
+      <div class="body">
+        <div class="strengths">
+          <div class="strength" style="--c:var(--biz)">
+            <h3>A head start on internationalization</h3>
+            <p>As a Vulcanus scholar, I research how industrial companies in Japan and Europe can enter each other's markets. At Acciona I supported ICT teams across every business unit and several countries. I work in Spanish and English, with French and Japanese in progress.</p>
+            <a href="#/experience/vulcanus">See the roles</a>
+          </div>
+          <div class="strength" style="--c:var(--eng)">
+            <h3>Both sides of the conversation</h3>
+            <p>I trained as an engineer and in business at the same time. I've built IoT systems that ended up in a journal article, and I've written business plans. That means I can follow a technical discussion and explain what it means for the business.</p>
+            <a href="#/projects">See the projects</a>
+          </div>
+          <div class="strength" style="--c:var(--lead)">
+            <h3>Experience leading people</h3>
+            <p>I've led a group of students abroad and been a class representative and mentor. I sat on a Formula Student business board and spent years teaching and coaching skiers. None of it was a management title, but all of it meant being responsible for others.</p>
+            <a href="#/experience/leading">See leading and teaching</a>
+          </div>
+          <div class="strength" style="--c:var(--com)">
+            <h3>An entrepreneurial way of thinking</h3>
+            <p>FlashEx won the FCCEE UGR ideas contest, GRANCOSOL won the Impronta Granada prize, and The Crew Barber was a full start-up plan with an MVP. They taught me to test an idea against real customers and numbers.</p>
+            <a href="#/projects/ventures">See the start-ups</a>
+          </div>
+        </div>
+        <ul class="skills" aria-label="Skills">
+          <li>Market research for internationalization</li><li>Cross-functional teamwork</li><li>Multicultural teams</li><li>Sponsor and stakeholder relations</li><li>Customer relationship management</li><li>Project engineering and PMO tools</li><li>Data analysis and Power BI</li><li>IoT and technology integration</li><li>Energy efficiency</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="block dark" id="contact">
+    <div class="wrap sec">
+      <h2>Next station<small>Where I'm heading</small></h2>
+      <div class="body">
+        <p class="lede">I'm looking for opportunities to grow into management and internationalization, ideally at companies building the future of energy, cities and connected technology.</p>
+        <p>Roles in international business development, strategy, operations or technology management are where I think I can contribute most and learn fastest. If you're working on something like that, I'd love to talk.</p>
+        <div class="contact">
+          <a class="btn solid" href="https://www.linkedin.com/in/lucialopez-garcia/" target="_blank" rel="noopener">Message me on LinkedIn</a>
+          <!-- Add your email: <a class="btn" href="mailto:your.name@example.com">Email me</a> -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <nav class="nextstop" aria-label="Next page"><div class="wrap">
+    <a href="#/experience"><small>Next stop</small><strong>Experience</strong></a>
+  </div></nav>
+</section>
+
+<!-- =================================================================
+     EXPERIENCE
+     ================================================================= -->
+<section class="view" data-view="experience" data-label="Experience" data-title="Experience · Lucía López García" hidden>
+  <div class="pagehead"><div class="wrap">
+    <div>
+      <h1>Experience</h1>
+      <p>Six professional roles in four countries, plus years of being responsible for groups of people. Each entry ends with what it taught me.</p>
+    </div>
+    <div class="stripe" aria-hidden="true"><i class="fill-biz"></i><i class="fill-eng"></i><i class="fill-lead"></i></div>
+  </div></div>
+
+  <div class="block"><div class="wrap">
+    <div class="filters" role="group" aria-label="Filter by line"><span>Show</span>
+      <button type="button" data-line="all" aria-pressed="true">Everything</button>
+      <button type="button" data-line="biz" aria-pressed="false"><i class="fill-biz"></i>Business &amp; management</button>
+      <button type="button" data-line="eng" aria-pressed="false"><i class="fill-eng"></i>Engineering &amp; IoT</button>
+      <button type="button" data-line="lead" aria-pressed="false"><i class="fill-lead"></i>Leading people</button>
+    </div>
+
+    <div class="group" id="professional">
+      <h2>Professional experience</h2>
+      <p class="gi">From energy research in Madrid to international business in Tokyo.</p>
+      <div class="timeline">
+
+        <article class="entry now" id="vulcanus" data-place="tokyo" data-lines="biz">
+          <header>
+            <h3>Researcher, Vulcanus in Japan scholarship</h3>
+            <p class="when">Aug 2026 – present</p>
+            <p class="org">EU-Japan Centre for Industrial Cooperation</p>
+            <p class="where">Tokyo, Japan</p>
+          </header>
+          <p>I was selected for Vulcanus, the EU-Japan Centre's scholarship that brings European engineering and science students into Japanese industry. Through it I work on projects with industrial companies from Japan and Europe, doing market research for their internationalization.</p>
+          <p class="learnt">I'm learning how European and Japanese companies approach a new market, and that good research depends on understanding the culture behind the numbers.</p>
+          <div class="lines"></div>
+        </article>
+
+        <article class="entry now" id="vena" data-place="tokyo" data-lines="eng biz">
+          <header>
+            <h3>Technical Services Intern</h3>
+            <p class="when">Oct 2026 – present</p>
+            <p class="org">Vena Energy</p>
+            <p class="where">Tokyo, Japan</p>
+          </header>
+          <p>I develop and maintain the company's PMO platform. It's the internal tool for storing, managing and visualising solar, wind and battery projects through development, construction and operations.</p>
+          <p class="learnt">Building a tool other people rely on has taught me to start from what engineers and managers actually need to see.</p>
+          <div class="lines"></div>
+        </article>
+
+        <article class="entry" id="acciona" data-place="madrid" data-lines="biz eng">
+          <header>
+            <h3>ICT International Coordination Intern</h3>
+            <p class="when">Apr – Sep 2025</p>
+            <p class="org">Acciona</p>
+            <p class="where">Madrid, Spain</p>
+          </header>
+          <p>I coordinated and supported the international and national ICT teams across all of Acciona's business units. That included the rollout of ICT infrastructure and software licences at sites and offices abroad.</p>
+          <p class="learnt">I saw how much coordination it takes to keep a global company's teams aligned, and how much depends on clear communication between headquarters and each country.</p>
+          <div class="lines"></div>
+        </article>
+
+        <article class="entry" id="urjc-iot" data-place="madrid" data-lines="eng">
+          <header>
+            <h3>IoT and Energy Efficiency Project Developer</h3>
+            <p class="when">Sep 2022 – Sep 2025</p>
+            <p class="org">Universidad Rey Juan Carlos</p>
+            <p class="where">Madrid, Spain</p>
+          </header>
+          <p>For three years, alongside my degrees, I researched and developed smart-building and energy-efficiency projects across the Community of Madrid. The work covered project engineering, data analysis and technology integration. Partners included CIEMAT and Stulz, and the Stulz project led to two publications.</p>
+          <p class="learnt">It taught me to take a project from idea to a working system, and to stick with a problem until the data made sense.</p>
+          <p class="note"><a href="#/projects/iot">See the projects</a> and <a href="#/projects/publications">publications</a></p>
+          <div class="lines"></div>
+        </article>
+
+        <article class="entry" id="disney" data-place="florida" data-lines="biz lead">
+          <header>
+            <h3>Academic Exchange Program: Merchandise, Attractions and Entertainment</h3>
+            <p class="when">Jul 2024 – Feb 2025</p>
+            <p class="org">The Walt Disney Company</p>
+            <p class="where">Orlando, USA</p>
+          </header>
+          <p>I was one of the URJC students selected to study at the University of California, Riverside while interning at Walt Disney World. I worked in merchandise, attractions and entertainment at one of the largest guest operations in the world.</p>
+          <p class="learnt">Up close, I learned how service standards and multicultural teams are managed at enormous scale.</p>
+          <div class="lines"></div>
+        </article>
+
+        <article class="entry" id="agh-racing" data-place="krakow" data-lines="biz lead">
+          <header>
+            <h3>Sponsorship Manager</h3>
+            <p class="when">Nov 2022 – Jun 2023</p>
+            <p class="org">AGH Racing, Formula Student team</p>
+            <p class="where">Kraków, Poland</p>
+          </header>
+          <p>During my Erasmus year I was on the business board of AGH University's Formula Student team. I managed the relationships with the team's sponsors and drew up their contracts.</p>
+          <p class="learnt">This was my first real negotiation experience. I learned that a company commits when it sees clear value for itself, not just a good cause.</p>
+          <div class="lines"></div>
+        </article>
+
+      </div>
+    </div>
+
+    <div class="group" id="leading">
+      <h2>Leading and teaching</h2>
+      <p class="gi">Smaller roles, but each one made me responsible for other people.</p>
+      <div class="timeline">
+
+        <article class="entry" id="kells" data-place="florida" data-lines="lead">
+          <header>
+            <h3>Group Lead</h3>
+            <p class="when">Jun – Jul 2026</p>
+            <p class="org">Kells College, language immersion programmes</p>
+            <p class="where">Miami–Fort Lauderdale, USA</p>
+          </header>
+          <p>I was responsible for a group of Spanish students on an English-language course in the US, through classes, cultural activities and trips.</p>
+          <p class="learnt">Looking after other people far from home taught me to plan ahead, stay calm and communicate clearly with students, families and staff.</p>
+          <div class="lines"></div>
+        </article>
+
+        <article class="entry" id="ski" data-lines="lead">
+          <header>
+            <h3>Ski Instructor and Competition Coach</h3>
+            <p class="when">2018 – 2026</p>
+            <p class="org">Five schools and clubs in Spain and Poland</p>
+            <p class="where">Alto Campoo, Zakopane, Sierra Nevada</p>
+          </header>
+          <p>I've taught every level, from first-timers of many nationalities to young racers preparing for competition. I'm a certified Técnico Deportivo de Esquí, Nivel I.</p>
+          <ul class="sublist">
+            <li data-place="santander" data-lines="lead"><span class="t">Ski Instructor, Club Esquí Slalom</span><span class="m">Alto Campoo, Cantabria, Dec 2025 – Apr 2026</span></li>
+            <li data-place="granada" data-lines="lead"><span class="t">U10 Coach, Whitecamps</span><span class="m">Sierra Nevada, Granada, Nov 2023 – May 2024</span></li>
+            <li data-place="krakow" data-lines="lead"><span class="t">Ski Instructor, Strama Sport i Turystyka</span><span class="m">Zakopane, Poland, Dec 2022 – Mar 2023</span></li>
+            <li data-place="santander" data-lines="lead"><span class="t">Ski Instructor, Dimas Ski School, and U8–U12 Coach, Club Esquí Skandy</span><span class="m">Alto Campoo, Cantabria, Oct 2018 – Apr 2022</span></li>
+          </ul>
+          <p class="learnt">Teaching taught me to read people quickly, adapt the message to each level and language, and keep a group motivated.</p>
+          <div class="lines"></div>
+        </article>
+
+        <article class="entry" id="tutoring" data-lines="lead">
+          <header>
+            <h3>Language Tutor</h3>
+            <p class="when">2021 – 2023</p>
+            <p class="org">Private tutoring</p>
+            <p class="where">Madrid and Kraków</p>
+          </header>
+          <ul class="sublist">
+            <li data-place="madrid" data-lines="lead"><span class="t">English tutor for teenagers</span><span class="m">Madrid, 2021 – 2022</span></li>
+            <li data-place="krakow" data-lines="lead"><span class="t">Spanish tutor for children</span><span class="m">Kraków, 2022 – 2023</span></li>
+          </ul>
+          <div class="lines"></div>
+        </article>
+
+      </div>
+    </div>
+  </div></div>
+
+  <nav class="nextstop" aria-label="Previous and next page"><div class="wrap">
+    <a href="#/"><small>Previous stop</small><strong>Overview</strong></a>
+    <a href="#/projects"><small>Next stop</small><strong>Projects</strong></a>
+  </div></nav>
+</section>
+
+<!-- =================================================================
+     PROJECTS
+     ================================================================= -->
+<section class="view" data-view="projects" data-label="Projects" data-title="Projects · Lucía López García" hidden>
+  <div class="pagehead"><div class="wrap">
+    <div>
+      <h1>Projects and research</h1>
+      <p>IoT systems built for real clients, research that reached a journal, and start-up ideas tested in competitions.</p>
+    </div>
+    <div class="stripe" aria-hidden="true"><i class="fill-eng"></i><i class="fill-biz"></i></div>
+  </div></div>
+
+  <div class="block"><div class="wrap">
+    <div class="filters" role="group" aria-label="Filter by line"><span>Show</span>
+      <button type="button" data-line="all" aria-pressed="true">Everything</button>
+      <button type="button" data-line="eng" aria-pressed="false"><i class="fill-eng"></i>Engineering &amp; IoT</button>
+      <button type="button" data-line="biz" aria-pressed="false"><i class="fill-biz"></i>Business &amp; management</button>
+      <button type="button" data-line="com" aria-pressed="false"><i class="fill-com"></i>Community</button>
+    </div>
+
+    <div class="cluster" id="publications">
+      <h2>Publications</h2>
+      <p class="gi">Both papers come from the IoT monitoring system I worked on for Stulz's data-centre cooling units.</p>
+      <div class="pub" data-place="madrid" data-lines="eng">
+        <span class="t">EMC-aware validation of a distributed measurement system for intelligent air-handling units in data centers</span>
+        <span class="m"><em>Measurement</em> (journal), August 2026. <a href="https://www.sciencedirect.com/science/article/pii/S0263224126029210" target="_blank" rel="noopener">Read on ScienceDirect</a></span>
+      </div>
+      <div class="pub" data-place="madrid" data-lines="eng">
+        <span class="t">Development and Implementation of an IoT System for Monitoring the Intelligent Air Handling Unit in Data Centers</span>
+        <span class="m">ICCIDA conference, June 2025</span>
+      </div>
+    </div>
+
+    <div class="cluster" id="iot">
+      <h2>IoT and smart infrastructure</h2>
+      <p class="gi">Applied projects for research centres and companies, where technology had to deliver energy savings and reliable data.</p>
+      <div class="cards">
+        <div class="card" data-place="madrid" data-lines="eng biz"><span class="t">Wireless sensor network for a data centre</span><span class="m">URJC for Stulz, Feb 2024 – May 2025</span><p>An electromagnetic-compatibility study, and the design and rollout of a sensor network for an industrial data-centre cooling system.</p><span class="lines"></span></div>
+        <div class="card" data-place="madrid" data-lines="eng"><span class="t">Smart Campus Fuenlabrada</span><span class="m">BEng thesis, URJC, Feb 2023 – Jun 2025</span><p>Applied IoT technologies to improve the energy efficiency of URJC's Fuenlabrada campus, measuring comfort variables room by room.</p><span class="lines"></span></div>
+        <div class="card" data-place="madrid" data-lines="eng"><span class="t">Smart Buildings for CIEMAT</span><span class="m">URJC for CIEMAT, Madrid, 2022 – 2024</span><p>An energy-efficiency monitoring system combining CIEMAT's own sensors with a private URJC server and a custom gateway and communications setup.</p><span class="lines"></span></div>
+        <div class="card" data-place="valladolid" data-lines="eng"><span class="t">Connected vehicle service</span><span class="m">MEng, UVa, Feb – Jun 2026</span><p>Deployment of private 4G infrastructure and edge AI for a C-ITS connected-vehicle system.</p><span class="lines"></span></div>
+        <div class="card" data-place="valladolid" data-lines="eng"><span class="t">IoT datalogger</span><span class="m">MEng project workshop, UVa, Sep 2025 – Jan 2026</span><p>Design and build of an electronic system with power supply, FPGA, sensors and actuators. A wireless link with an antenna and transceiver module sends the sensor data.</p><span class="lines"></span></div>
+      </div>
+    </div>
+
+    <div class="cluster" id="ventures">
+      <h2>Start-ups and business plans</h2>
+      <p class="gi">Ideas taken from concept to plan, two of them recognised with awards.</p>
+      <div class="cards">
+        <div class="card" data-place="granada" data-lines="biz"><span class="t">FlashEx</span><span class="m">UGR and UGR Emprendedora, Sep 2023 – May 2024</span><p>A full-service business that manages pop-up stores and short-term events for retailers who want a temporary physical shop. The plan started in a UGR course and was refined with mentors from UGR Emprendedora.</p><span class="prize">Winner, Concurso de Ideas FCCEE UGR</span><span class="lines"></span></div>
+        <div class="card" data-place="granada" data-lines="biz com"><span class="t">GRANCOSOL</span><span class="m">Ideas Factory UGR, Granada, 2023</span><p>A company that promotes clean energy by setting up energy communities in villages around Granada.</p><span class="prize">Impronta Granada prize</span><span class="lines"></span></div>
+        <div class="card" data-place="madrid" data-lines="biz"><span class="t">The Crew Barber</span><span class="m">BBA final project, URJC, Jan – May 2025</span><p>A barbershop for young people with an integrated leisure area. It's a complete start-up project with an MVP, and professionals validated its scalability and viability.</p><span class="lines"></span></div>
+        <div class="card" data-place="madrid" data-lines="eng com"><span class="t">ReCycle</span><span class="m">Liderazgo Tech GL, Banco Santander, Nov – Dec 2021</span><p>An app to encourage recycling in Spain, built by a team of seven women studying STEM.</p><span class="lines"></span></div>
+      </div>
+    </div>
+
+    <div class="cluster" id="early-research">
+      <h2>Early research</h2>
+      <p class="gi">Where my interest in research started, while I was still at school.</p>
+      <div class="cards">
+        <div class="card" data-place="santander" data-lines="com"><span class="t">Media competence in the digital society</span><span class="m">R&amp;D project, Universidad de Cantabria, Oct 2018 – Jan 2019</span><p>I was a collaborating researcher on a university project that diagnosed citizens' media literacy and designed teaching action plans.</p><span class="lines"></span></div>
+        <div class="card" data-place="santander" data-lines="biz"><span class="t">Online commerce: an opportunity for entrepreneurs</span><span class="m">STEM Talent Girl, Nov 2019 – Jun 2020</span><p>A supervised research project on how e-commerce opens doors for new businesses.</p><span class="lines"></span></div>
+      </div>
+    </div>
+  </div></div>
+
+  <nav class="nextstop" aria-label="Previous and next page"><div class="wrap">
+    <a href="#/experience"><small>Previous stop</small><strong>Experience</strong></a>
+    <a href="#/education"><small>Next stop</small><strong>Education</strong></a>
+  </div></nav>
+</section>
+
+<!-- =================================================================
+     EDUCATION
+     ================================================================= -->
+<section class="view" data-view="education" data-label="Education" data-title="Education · Lucía López García" hidden>
+  <div class="pagehead"><div class="wrap">
+    <div>
+      <h1>Education</h1>
+      <p>Engineering and business studied side by side, across five universities in three countries.</p>
+    </div>
+    <div class="stripe" aria-hidden="true"><i class="fill-eng"></i><i class="fill-biz"></i></div>
+  </div></div>
+
+  <div class="block"><div class="wrap">
+    <div class="group">
+      <h2>Degrees</h2>
+      <p class="gi">Leadership roles at university are listed under each degree.</p>
+      <div class="timeline">
+        <article class="entry" id="muit" data-place="valladolid" data-lines="eng">
+          <header>
+            <h3>MEng, Telecommunications Engineering</h3>
+            <p class="when">Sep 2025 – Jun 2026</p>
+            <p class="org">Universidad de Valladolid</p>
+            <p class="where">Valladolid, Spain</p>
+          </header>
+          <p>The master's degree that qualifies me as a telecommunications engineer. My project work focused on IoT hardware and connected mobility: an FPGA-based IoT datalogger, and a private 4G network with edge AI for connected vehicles.</p>
+          <div class="lines"></div>
+        </article>
+
+        <article class="entry" id="ucr" data-place="florida" data-lines="biz">
+          <header>
+            <h3>Certificate in Applied Management for Hospitality and Tourism</h3>
+            <p class="when">Jun – Dec 2024</p>
+            <p class="org">University of California, Riverside</p>
+            <p class="where">Riverside, USA</p>
+          </header>
+          <p>Management training at a US university, taken as part of the Disney Academic Exchange Program, so I could apply it at work as I learned it.</p>
+          <div class="lines"></div>
+        </article>
+
+        <article class="entry" id="beng" data-place="madrid" data-lines="eng lead">
+          <header>
+            <h3>BEng, Systems Engineering</h3>
+            <p class="when">Sep 2020 – Jun 2025</p>
+            <p class="org">Universidad Rey Juan Carlos</p>
+            <p class="where">Madrid, Spain</p>
+          </header>
+          <p>I studied systems, networks and programming, and put them into practice in three years of IoT and energy-efficiency research. My thesis, Smart Campus Fuenlabrada, applied IoT to make the campus more energy efficient.</p>
+          <p class="note">Mentor and degree representative</p>
+          <ul class="sublist">
+            <li data-place="krakow" data-lines="eng"><span class="t">Erasmus+ in Telecommunications Engineering, AGH University of Krakow</span><span class="m">Kraków, Poland, Sep 2022 – Jul 2023</span></li>
+          </ul>
+          <div class="lines"></div>
+        </article>
+
+        <article class="entry" id="ba" data-place="madrid" data-lines="biz lead">
+          <header>
+            <h3>Bachelor of Business Administration</h3>
+            <p class="when">Sep 2020 – Jun 2024</p>
+            <p class="org">Universidad Rey Juan Carlos</p>
+            <p class="where">Madrid, Spain</p>
+          </header>
+          <p>I studied this in parallel with engineering, covering strategy, finance, marketing and organisation. My final project was The Crew Barber, a complete start-up plan with a validated MVP.</p>
+          <p class="note">Class representative</p>
+          <ul class="sublist">
+            <li data-place="granada" data-lines="biz lead"><span class="t">SICUE exchange in Business Administration, Universidad de Granada</span><span class="m">Granada, Spain, Sep 2023 – Jun 2024, class representative</span></li>
+          </ul>
+          <div class="lines"></div>
+        </article>
+
+        <article class="entry" id="school">
+          <header>
+            <h3>School</h3>
+            <p class="when">2008 – 2020</p>
+            <p class="org">Santander, with a year in Auckland</p>
+            <p class="where">Spain, New Zealand</p>
+          </header>
+          <ul class="sublist">
+            <li data-place="auckland" data-lines="com"><span class="t">Lynfield College, a year abroad</span><span class="m">Auckland, New Zealand, 2016</span><p>My first experience of living and studying on the other side of the world.</p></li>
+            <li data-place="santander"><span class="t">Salesianos María Auxiliadora and IES Santa Clara</span><span class="m">Santander, 2008 – 2020</span></li>
+          </ul>
+        </article>
+      </div>
+    </div>
+
+    <div class="cluster" id="programmes">
+      <h2>Talent and leadership programmes</h2>
+      <ul class="plain">
+        <li data-place="tokyo" data-lines="biz eng"><span class="lines"></span><span><span class="t">Vulcanus in Japan</span><span class="m">EU-Japan Centre for Industrial Cooperation, from 2026. Scholarship for European students in Japanese industry.</span></span></li>
+        <li data-place="granada" data-lines="biz"><span class="lines"></span><span><span class="t">Business Skills</span><span class="m">UGR Emprendedora, 2023 – 2024. Programme for entrepreneurs.</span></span></li>
+        <li data-place="madrid" data-lines="eng biz"><span class="lines"></span><span><span class="t">Liderazgo Tech GL</span><span class="m">Banco Santander, 2021 – 2022. Leadership for students in technology.</span></span></li>
+        <li data-place="santander" data-lines="eng lead"><span class="lines"></span><span><span class="t">STEM Talent Girl</span><span class="m">Fundación ASTI, 2018 – 2020. Mentoring for women in STEM.</span></span></li>
+        <li data-place="santander" data-lines="eng"><span class="lines"></span><span><span class="t">ESTALMAT, Estímulo del Talento Matemático</span><span class="m">Universidad de Cantabria, 2014 – 2017. Programme for mathematically gifted students.</span></span></li>
+      </ul>
+    </div>
+
+    <div class="cluster" id="certifications">
+      <h2>Certifications</h2>
+      <ul class="plain">
+        <li data-lines="biz eng"><span class="lines"></span><span><span class="t">Power BI</span><span class="m">Santander, 2025</span></span></li>
+        <li data-lines="biz lead"><span class="lines"></span><span><span class="t">Harvard ManageMentor</span><span class="m">Harvard Business Review, 2024. Leadership and team leadership</span></span></li>
+        <li data-lines="eng"><span class="lines"></span><span><span class="t">AI Fundamentals</span><span class="m">IBM, 2024. <a href="https://www.credly.com/badges/3c82747a-5d8d-4b64-88d0-798197aee87e/public_url" target="_blank" rel="noopener">View credential</a></span></span></li>
+        <li data-lines="biz"><span class="lines"></span><span><span class="t">Fundamentals of Private Banking and Wealth Management</span><span class="m">Santander, 2023</span></span></li>
+        <li data-place="madrid" data-lines="eng com"><span class="lines"></span><span><span class="t">Smart Cities Summer Course</span><span class="m">Universidad Rey Juan Carlos</span></span></li>
+        <li data-lines="biz"><span class="lines"></span><span><span class="t">Fundamentals of Digital Marketing</span><span class="m">Google, 2020</span></span></li>
+        <li data-lines="lead"><span class="lines"></span><span><span class="t">Técnico Deportivo de Esquí, Nivel I</span><span class="m">Centro de Formación de Técnicos Deportivos, 2019</span></span></li>
+        <li><span class="lines"></span><span><span class="t">Cambridge Advanced (C1)</span><span class="m">University of Cambridge, 2018</span></span></li>
+      </ul>
+    </div>
+
+    <div class="cluster" id="languages">
+      <h2>Languages</h2>
+      <div class="langs">
+        <div class="lang"><h3>Spanish</h3><p>Native</p><div class="meter"><span style="width:100%"></span></div></div>
+        <div class="lang"><h3>English</h3><p>Bilingual, Cambridge Advanced</p><div class="meter"><span style="width:95%"></span></div></div>
+        <div class="lang"><h3>French</h3><p>Limited working proficiency</p><div class="meter"><span style="width:50%"></span></div></div>
+        <div class="lang"><h3>Japanese</h3><p>Elementary, learning in Tokyo</p><div class="meter"><span style="width:20%"></span></div></div>
+      </div>
+    </div>
+  </div></div>
+
+  <nav class="nextstop" aria-label="Previous and next page"><div class="wrap">
+    <a href="#/projects"><small>Previous stop</small><strong>Projects</strong></a>
+    <a href="#/beyond"><small>Next stop</small><strong>Beyond work</strong></a>
+  </div></nav>
+</section>
+
+<!-- =================================================================
+     BEYOND WORK
+     ================================================================= -->
+<section class="view" data-view="beyond" data-label="Beyond work" data-title="Beyond work · Lucía López García" hidden>
+  <div class="pagehead"><div class="wrap">
+    <div>
+      <h1>Beyond work</h1>
+      <p>Volunteering, sport and creative projects. This is where a lot of my teamwork, patience and drive comes from.</p>
+    </div>
+    <div class="stripe" aria-hidden="true"><i class="fill-com"></i><i class="fill-lead"></i></div>
+  </div></div>
+
+  <div class="block"><div class="wrap">
+    <div class="cluster" id="volunteering">
+      <h2>Volunteering</h2>
+      <p class="gi">Six volunteering roles since 2017, in three regions of Spain and in the United States.</p>
+      <div class="cards">
+        <div class="card" data-place="madrid" data-lines="com eng"><span class="t">Fundación Cibervoluntarios</span><span class="m">Mar – Sep 2025</span><p>Volunteering in science and technology with a foundation that uses technology for social inclusion.</p><span class="lines"></span></div>
+        <div class="card" data-place="florida" data-lines="com"><span class="t">Give Kids The World Village</span><span class="m">Florida, Aug – Dec 2024</span><p>Supported and played with children with critical illnesses.</p><span class="lines"></span></div>
+        <div class="card" data-place="granada" data-lines="com lead"><span class="t">Comunidades de Aprendizaje, Junta de Andalucía</span><span class="m">Colegio Escolapios Cartuja, Granada, Nov 2023 – Jun 2024</span><p>Led Grupos Interactivos learning activities with primary school pupils.</p><span class="lines"></span></div>
+        <div class="card" data-place="santander" data-lines="com"><span class="t">Infancia Hospitalizada, Cruz Roja</span><span class="m">Hospital Marqués de Valdecilla, Santander, 2017 – 2020</span><p>Three years as a volunteer monitor supporting children in hospital.</p><span class="lines"></span></div>
+        <div class="card" data-place="santander" data-lines="com"><span class="t">Social integration work camp</span><span class="m">Instituto Riojano de la Juventud, Herce, Jul 2019</span><p>A camp with people with different degrees of disability, aimed at promoting their social integration.</p><span class="lines"></span></div>
+        <div class="card" data-place="santander" data-lines="com"><span class="t">Restoration work camp</span><span class="m">Consejo de la Juventud de Castilla y León, Villalón de Campos, Jul 2018</span><p>Restored public spaces in a village for its residents.</p><span class="lines"></span></div>
+      </div>
+    </div>
+
+    <div class="cluster" id="sport">
+      <h2>Sport and stage</h2>
+      <div class="cards">
+        <div class="card" data-place="santander" data-lines="com"><span class="t">Sidenor ski competition team</span><span class="m">Alto Campoo, Cantabria, 2011 – 2015</span><p>Four seasons racing in competitions across Spain. Skiing has stayed with me ever since, first as a racer and now as an instructor.</p><span class="lines"></span></div>
+        <div class="card" data-place="santander" data-lines="com"><span class="t">Básico dance studio</span><span class="m">Santander, 2011 – 2017</span><p>Six years of theatre and street performances, which is where I lost my fear of a stage.</p><span class="lines"></span></div>
+      </div>
+    </div>
+
+    <div class="cluster" id="creating">
+      <h2>Creating</h2>
+      <div class="cards">
+        <div class="card" data-lines="biz"><span class="t">Websites, social media and a podcast</span><span class="m">Since 2018</span><p>I build and run websites and social channels, and in 2022–2023 I co-hosted and managed a podcast. This page is the latest one.</p><span class="lines"></span></div>
+      </div>
+    </div>
+  </div></div>
+
+  <nav class="nextstop" aria-label="Previous and next page"><div class="wrap">
+    <a href="#/education"><small>Previous stop</small><strong>Education</strong></a>
+    <a href="#/overview/contact"><small>Last stop</small><strong>Get in touch</strong></a>
+  </div></nav>
+</section>
+
+</div>
+
+<footer><div class="wrap">
+  <span>Lucía López García, 2026</span>
+  <a href="https://www.linkedin.com/in/lucialopez-garcia/" target="_blank" rel="noopener">LinkedIn</a>
+</div></footer>
+
+<script>
+/* ===================== STATIONS =====================
+   Order = order along the line. x/y = position on the map.
+   label: "above" or "below". loop: true draws a double ring (a place I came back to). */
+const STATIONS = [
+  {id:"santander", name:"Santander", sub:"Cantabria, Spain", years:"2008 – 2020", x:90, y:250, label:"below", loop:true,
+   intro:"Home. School, a maths talent programme, the ski team, a dance studio, my first volunteering and research, and the mountains where I started teaching and still come back to."},
+  {id:"auckland", name:"Auckland", sub:"New Zealand", years:"2016", x:240, y:250, label:"below",
+   intro:"A school year on the other side of the world, and my first time building a life from scratch somewhere new."},
+  {id:"madrid", name:"Madrid", sub:"Spain", years:"2020 – 2025", x:370, y:190, label:"above", loop:true,
+   intro:"Two degrees in parallel, three years developing IoT and energy-efficiency projects that led to two publications, a leadership programme with Banco Santander, and my international ICT role at Acciona."},
+  {id:"krakow", name:"Kraków", sub:"Poland", years:"2022 – 2023", x:510, y:190, label:"above",
+   intro:"Erasmus+ at AGH University, the business board of the Formula Student team, and teaching skiing and Spanish."},
+  {id:"granada", name:"Granada", sub:"Spain", years:"2023 – 2024", x:650, y:250, label:"below",
+   intro:"Business studies and class representative at UGR, two award-winning start-up ideas, an entrepreneurship programme, and coaching young racers in Sierra Nevada."},
+  {id:"florida", name:"Florida", sub:"USA", years:"2024 – 25, 2026", x:790, y:250, label:"below", loop:true,
+   intro:"Guest operations at Walt Disney World with a management certificate from UC Riverside, volunteering at Give Kids The World and, in 2026, leading a group of Spanish students on an immersion programme."},
+  {id:"valladolid", name:"Valladolid", sub:"Spain", years:"2025 – 2026", x:905, y:190, label:"above",
+   intro:"Master's in Telecommunications Engineering, building FPGA-based IoT hardware and a private 4G network for connected vehicles."},
+  {id:"tokyo", name:"Tokyo", sub:"Japan", years:"2026 –", x:1060, y:130, label:"above", here:true,
+   intro:"Vulcanus scholar at the EU-Japan Centre, doing internationalization research for European and Japanese companies, and building the PMO platform for solar, wind and battery projects at Vena Energy."}
+];
+const ROUTE = "M90 250 H240 L300 190 H510 L570 250 H790 L850 190 H930 L990 130 H1060";
+const AHEAD = {x:1220, y:130, name:"Next", sub:"Management and internationalization"};
+const START = "tokyo";
+const VIEWS = ["overview","experience","projects","education","beyond"];
+
+const LINE_NAMES = {eng:"Engineering & IoT", biz:"Business & management", lead:"Leading people", com:"Community"};
+const LETTER = {eng:"E", biz:"B", lead:"L", com:"C"};
+const NS = "http://www.w3.org/2000/svg";
+const $$ = (s, r=document) => [...r.querySelectorAll(s)];
+const linesOf = el => (el.dataset.lines || "").trim().split(/\s+/).filter(Boolean);
+
+/* ---------- Badges and colours ---------- */
+let auto = 0;
+$$("[data-lines], [data-place]").forEach(el=>{
+  if(!el.id) el.id = "item-" + (++auto);
+  const ls = linesOf(el);
+  if(ls.length) el.style.setProperty("--c", `var(--${ls[0]})`);
+  const slot = el.querySelector(":scope > .lines");
+  if(!slot) return;
+  ls.forEach(l=>{
+    const b = document.createElement("i");
+    b.className = "badge " + l; b.textContent = LETTER[l];
+    b.title = LINE_NAMES[l]; b.setAttribute("role","img"); b.setAttribute("aria-label", LINE_NAMES[l]);
+    slot.appendChild(b);
+  });
+});
+
+/* ---------- Route map ---------- */
+const itemsFor = id => $$("[data-place]").filter(el => (el.dataset.place||"").split(/\s+/).includes(id));
+const titleOf = el => { const t = el.querySelector(":scope > header h3, :scope > .t, :scope > span > .t"); return t ? t.textContent.trim() : ""; };
+const viewOf = el => el.closest(".view");
+
+const svg = document.getElementById("map");
+function mk(tag, attrs, parent){ const e = document.createElementNS(NS, tag); for(const k in attrs) e.setAttribute(k, attrs[k]); (parent||svg).appendChild(e); return e; }
+const track = mk("path",{d:ROUTE, class:"track"});
+mk("path",{d:`M1060 130 H${AHEAD.x - 16}`, class:"ahead"});
+track.style.setProperty("--len", Math.ceil(track.getTotalLength()));
+
+STATIONS.forEach((s, i)=>{
+  const delay = (0.25 + 1.6 * (i/(STATIONS.length-1))).toFixed(2) + "s";
+  const g = mk("g",{class:"stn", tabindex:"0", role:"button", "aria-pressed":"false", "aria-label":`${s.name}, ${s.sub}, ${s.years}`, "data-id":s.id});
+  g.style.setProperty("--d", delay);
+  mk("circle",{cx:s.x, cy:s.y, r:34, class:"hit"}, g);
+  if(s.loop) mk("circle",{cx:s.x, cy:s.y, r:19, class:"ring"}, g);
+  mk("circle",{cx:s.x, cy:s.y, r:13, class:"dot"}, g);
+  const up = s.label === "above";
+  const lbl = mk("g",{class:"lbl", "aria-hidden":"true"});
+  lbl.style.setProperty("--d", delay);
+  mk("text",{x:s.x, y: up ? s.y-58 : s.y+48, "text-anchor":"middle", class:"name"}, lbl).textContent = s.name;
+  mk("text",{x:s.x, y: up ? s.y-38 : s.y+68, "text-anchor":"middle", class:"yrs"}, lbl).textContent = s.years;
+  const set = new Set(); itemsFor(s.id).forEach(el => linesOf(el).forEach(l => set.add(l)));
+  const arr = ["eng","biz","lead","com"].filter(l => set.has(l));
+  const py = up ? s.y-28 : s.y+80, w = (arr.length-1)*12;
+  arr.forEach((l,k)=> mk("circle",{cx:s.x - w/2 + k*12, cy:py, r:4.5, fill:`var(--${l})`}, lbl));
+  if(s.here) mk("text",{x:s.x, y:s.y+40, "text-anchor":"middle", class:"here"}, lbl).textContent = "you are here";
+  g.addEventListener("click", ()=>select(s.id));
+  g.addEventListener("keydown", e=>{ if(e.key==="Enter"||e.key===" "){ e.preventDefault(); select(s.id);} });
+});
+const nx = mk("g",{class:"next lbl", "aria-hidden":"true"});
+nx.style.setProperty("--d","2.1s");
+mk("circle",{cx:AHEAD.x, cy:AHEAD.y, r:13, class:"dot"}, nx);
+mk("text",{x:AHEAD.x, y:AHEAD.y-58, "text-anchor":"middle", class:"name"}, nx).textContent = AHEAD.name;
+mk("text",{x:AHEAD.x, y:AHEAD.y-38, "text-anchor":"middle", class:"yrs"}, nx).textContent = AHEAD.sub;
+
+const stops = document.getElementById("stops");
+STATIONS.forEach(s=>{
+  const li = document.createElement("li"), b = document.createElement("button");
+  b.type = "button"; b.dataset.id = s.id; b.setAttribute("aria-pressed","false");
+  b.innerHTML = `${s.name}<small>${s.sub}, ${s.years}${s.here ? ", you are here" : ""}</small>`;
+  b.addEventListener("click", ()=>select(s.id));
+  li.appendChild(b); stops.appendChild(li);
+});
+stops.insertAdjacentHTML("beforeend", `<li><button type="button" disabled>${AHEAD.name}<small>${AHEAD.sub}</small></button></li>`);
+
+const panel = document.getElementById("panel");
+function select(id){
+  const s = STATIONS.find(x=>x.id===id);
+  $$("[data-id]").forEach(el=>el.setAttribute("aria-pressed", el.dataset.id===id ? "true":"false"));
+  const groups = {};
+  itemsFor(id).forEach(el=>{ const v = viewOf(el); (groups[v.dataset.label] = groups[v.dataset.label] || []).push([el, v.dataset.view]); });
+  const html = Object.entries(groups).map(([label, els])=>`
+    <div><h4>${label}</h4><ul>${els.map(([el, view])=>{
+      const pips = linesOf(el).map(l=>`<i style="background:var(--${l})"></i>`).join("");
+      return `<li><span class="pips">${pips}</span><a href="#/${view}/${el.id}">${titleOf(el)}</a></li>`;
+    }).join("")}</ul></div>`).join("");
+  panel.innerHTML = `<h3>${s.name}</h3><p class="sub">${s.sub}, ${s.years}</p><p class="intro">${s.intro}</p><div class="groups">${html}</div>`;
+}
+select(START);
+
+/* ---------- Filters ---------- */
+$$(".filters").forEach(f=>{
+  const view = viewOf(f);
+  f.addEventListener("click", e=>{
+    const b = e.target.closest("button"); if(!b) return;
+    const l = b.dataset.line;
+    $$("button", f).forEach(x=>x.setAttribute("aria-pressed", x===b ? "true":"false"));
+    $$(".entry, .card, .pub", view).forEach(it=>{ it.hidden = l!=="all" && !linesOf(it).includes(l); });
+    $$(".group, .cluster", view).forEach(c=>{ c.hidden = !c.querySelector(".entry:not([hidden]), .card:not([hidden]), .pub:not([hidden])"); });
+  });
+});
+
+/* ---------- Router: #/view or #/view/element-id ---------- */
+function route(){
+  const parts = location.hash.replace(/^#\/?/, "").split("/");
+  let v = parts[0] || "overview", id = parts[1];
+  if(!VIEWS.includes(v)){ const el = document.getElementById(v); v = el && viewOf(el) ? viewOf(el).dataset.view : "overview"; id = el ? el.id : null; }
+  $$(".view").forEach(s => s.hidden = s.dataset.view !== v);
+  $$("[data-nav]").forEach(a => a.dataset.nav === v ? a.setAttribute("aria-current","page") : a.removeAttribute("aria-current"));
+  const view = document.querySelector(`.view[data-view="${v}"]`);
+  document.title = view.dataset.title;
+  const target = id && document.getElementById(id);
+  if(target){
+    target.hidden = false; const c = target.closest(".group,.cluster"); if(c) c.hidden = false;
+    requestAnimationFrame(()=>{ target.scrollIntoView({block:"start", behavior:"instant"}); target.classList.remove("flash"); void target.offsetWidth; target.classList.add("flash"); });
+  } else {
+    window.scrollTo({top:0, behavior:"instant"});
+  }
+}
+window.addEventListener("hashchange", route);
+route();
+
+/* ---------- Tokyo clock on the board ---------- */
+const clock = document.getElementById("clock");
+function tick(){ try{ clock.textContent = new Intl.DateTimeFormat("en-GB",{timeZone:"Asia/Tokyo",hour:"2-digit",minute:"2-digit"}).format(new Date()) + " Tokyo"; }catch(e){} }
+tick(); setInterval(tick, 30000);
+
+/* ---------- Show "Download short CV" only if cv.pdf exists ---------- */
+if(location.protocol.startsWith("http")){
+  fetch("cv.pdf",{method:"HEAD"}).then(r=>{ if(r.ok) document.getElementById("cv-link").hidden = false; }).catch(()=>{});
+}
+</script>
+</body>
+</html>
+
